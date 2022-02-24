@@ -1,25 +1,38 @@
-## Hello there, I'm Roshan <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
+<h1 align="center">Hi 👋, I'm Roshan Shrestha</h1>
+<h3 align="center">A Mobile Application Developer who loves to create amazing apps with Flutter & Dart for Android and iOS. Now, also involved in creating Web and Desktop apps with flutter.</h3>
 
-I'm Roshan Shrestha a Mobile Application Developer. I love to create amazing apps with Flutter & Dart for Android and iOS. I also create Web and Desktop apps with flutter.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=roshandroids&label=Profile%20views&color=0e75b6&style=flat" alt="roshandroids" /> </p>
 
-[![Linkedin Badge](https://img.shields.io/badge/-roshandroids-informational?style=flat&labelColor=0e76a8&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roshandroids/) [![Github Badge](https://img.shields.io/badge/-roshandroids-informational?style=flat&labelColor=171515&logo=github&logoColor=white)](https://www.github.com/roshandroids/) [![Instagram Badge](https://img.shields.io/badge/-roshandroids-ff69b4?style=flat&labelColor=e84393&logo=instagram&logoColor=white)](https://www.instagram.com/roshandroids/) [![Mail Badge](https://img.shields.io/badge/-Roshan%20Shrestha-red?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:shrestharoshan776@gmail.com)
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=roshandroids" alt="roshandroids" /></a> </p>
 
-<!-- TODO: Add last video link -->
+<p align="left"> <a href="https://twitter.com/roshandroids" target="blank"><img src="https://img.shields.io/twitter/follow/roshandroids?logo=twitter&style=for-the-badge" alt="roshandroids" /></a> </p>
 
-- 🔭 I’m currently working at [Yellow Nepal Pvt. Ltd.](https://fawesomeapps.com/)
-- 🧑🏻‍💻 I’m always working to create outstanding apps.
-- 📫 Lets get connected : shrestharoshan776@gmail.com.
+- 🌱 I’m currently learning **Flutter, Dart, Firebase, Rest APIs, etc.**
 
-<br />
+- 👨‍💻 All of my projects are available at [https://roshansth.com.np/#/](https://roshansth.com.np/#/)
 
-### Languages and Tools
+- 📝 I regularly write articles on [https://flutterguide.com/author/roshan/](https://flutterguide.com/author/roshan/)
 
-<br />
+- 💬 Ask me about **Flutter, Dart, Firebase**
 
-<p align="left"> <a href="https://dart.dev" target="_blank"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/>  </a> <a href="https://www.docker.com/" target="_blank"> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </a> <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>  </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>  </a> </p>
+- 📫 How to reach me **shrestharoshan776@gmail.com**
 
-<br />
+- 📄 Know about my experiences [https://drive.google.com/file/d/1KKKHTPu_DVrAYaWK4RSsFU3U-3S94T-d/view](https://drive.google.com/file/d/1KKKHTPu_DVrAYaWK4RSsFU3U-3S94T-d/view)
 
-### Github Stats
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/roshandroids" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="roshandroids" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/roshandroids" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="roshandroids" height="30" width="40" /></a>
+<a href="https://fb.com/roshandroids" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="roshandroids" height="30" width="40" /></a>
+<a href="https://instagram.com/roshandroids" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="roshandroids" height="30" width="40" /></a>
+<a href="https://discord.gg/Rowshan#5942" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Rowshan#5942" height="30" width="40" /></a>
+</p>
 
-![Ipenywis's github stats](https://github-readme-stats.vercel.app/api?username=roshandroids&count_private=true&theme=tokyonight)
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://cordova.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_cordova/apache_cordova-icon.svg" alt="apachecordova" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=roshandroids&show_icons=true&locale=en&layout=compact" alt="roshandroids" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=roshandroids&show_icons=true&locale=en" alt="roshandroids" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=roshandroids&" alt="roshandroids" /></p>
