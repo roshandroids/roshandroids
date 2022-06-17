@@ -5,7 +5,7 @@
 
 
 
-<p align="left"> <a href="https://twitter.com/roshandroids" target="blank"><img src="https://img.shields.io/twitter/follow/roshandroids?logo=twitter&style=for-the-badge" alt="roshandroids" /></a> </p>
+<p align="left"> <a href="https://twitter.com/roshansth56" target="blank"><img src="https://img.shields.io/twitter/follow/roshansth56?logo=twitter&style=for-the-badge" alt="roshandroids" /></a> </p>
 
 - 🌱 I’m currently learning **Flutter, Dart, Firebase, Rest APIs, etc.**
 
