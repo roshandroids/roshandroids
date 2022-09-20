@@ -4,6 +4,7 @@ import 'package:motion/motion.dart';
 import 'package:roshandroids/src/features/home/presentation/animation/entrance_fader.dart';
 import 'package:roshandroids/src/features/home/presentation/widgets/menu_bar.dart';
 
+
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -12,6 +13,7 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class _MyHomePageState extends ConsumerState<HomeScreen> {
+
   late final MotionController _motionController;
   @override
   void initState() {
@@ -19,12 +21,13 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
     super.initState();
   }
 
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      drawer: const Drawer(),
+
       appBar: PreferredSize(
         preferredSize: Size(size.width, 66),
         child: const EntranceFader(
@@ -43,8 +46,29 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
               ),
             )
           ],
-        ),
-      ),
+
+     
     );
   }
 }
+//  DropdownButtonFormField<ThemeMode>(
+//               items: const [
+//                 DropdownMenuItem(
+//                   value: ThemeMode.light,
+//                   child: Text('Light'),
+//                 ),
+//                 DropdownMenuItem(
+//                   value: ThemeMode.dark,
+//                   child: Text('Dark'),
+//                 ),
+//                 DropdownMenuItem(
+//                   value: ThemeMode.system,
+//                   child: Text('System'),
+//                 )
+//               ],
+//               onChanged: (value) {
+//                 ref
+//                     .read(themeController.notifier)
+//                     .updateCurrentThemeMode(value);
+//               },
+//             ),
