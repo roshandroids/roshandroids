@@ -17,6 +17,7 @@ dependencies:
   freezed_annotation: ^2.1.0
   go_router: ^4.5.0
   google_fonts: ^3.0.1
+  motion: ^1.3.3
   responsive_framework: ^0.2.0
 
 dev_dependencies:
@@ -52,12 +53,10 @@ flutter:
   assets:
     - assets/images/
   #   - images/a_dot_ham.jpeg
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: Agustina
+      fonts:
+        - asset: assets/fonts/agustina.otf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
