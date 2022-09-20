@@ -21,12 +21,14 @@ class MyApp extends ConsumerWidget {
       theme: themeData.getLightThemeData,
       darkTheme: themeData.getDarkThemeData,
       builder: (context, child) => ResponsiveWrapper.builder(
-        child,
+        ClampingScrollWrapper.builder(context, child!),
         minWidth: 480,
+        mediaQueryData: MediaQuery.of(context),
         defaultScale: true,
+        defaultName: MOBILE,
         breakpoints: [
           const ResponsiveBreakpoint.autoScale(480, name: MOBILE),
-          const ResponsiveBreakpoint.resize(600, name: MOBILE),
+          const ResponsiveBreakpoint.resize(480, name: MOBILE),
           const ResponsiveBreakpoint.resize(850, name: TABLET),
           const ResponsiveBreakpoint.resize(1080, name: DESKTOP),
         ],
