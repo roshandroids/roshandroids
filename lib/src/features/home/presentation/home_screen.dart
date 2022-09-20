@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import '../../../core/core.dart';
+import 'package:roshandroids/src/core/core.dart';
 
 class MyHomeScreen extends ConsumerStatefulWidget {
-  const MyHomeScreen({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  const MyHomeScreen({super.key});
 
   @override
   ConsumerState<MyHomeScreen> createState() => _MyHomePageState();
@@ -24,9 +21,7 @@ class _MyHomePageState extends ConsumerState<MyHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +42,9 @@ class _MyHomePageState extends ConsumerState<MyHomeScreen> {
                 )
               ],
               onChanged: (value) {
-                ref.read(themeController.notifier).changeThemeMode = value;
+                ref
+                    .read(themeController.notifier)
+                    .updateCurrentThemeMode(value);
               },
             ),
             const Text(
