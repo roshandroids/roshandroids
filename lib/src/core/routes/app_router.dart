@@ -12,7 +12,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/',
         name: AppRoute.home.name,
-        builder: (context, state) => const MyHomeScreen(),
+        builder: (context, state) => const HomeScreen(),
       ),
     ],
     errorBuilder: (context, state) => const NotFoundScreen(),
