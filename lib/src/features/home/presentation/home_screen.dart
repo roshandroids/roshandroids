@@ -1,67 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:roshandroids/src/core/core.dart';
 
-class MyHomeScreen extends ConsumerStatefulWidget {
-  const MyHomeScreen({super.key});
+class HomeScreen extends ConsumerStatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  ConsumerState<MyHomeScreen> createState() => _MyHomePageState();
+  ConsumerState<HomeScreen> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends ConsumerState<MyHomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class _MyHomePageState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            DropdownButtonFormField<ThemeMode>(
-              items: const [
-                DropdownMenuItem(
-                  value: ThemeMode.light,
-                  child: Text('Light'),
-                ),
-                DropdownMenuItem(
-                  value: ThemeMode.dark,
-                  child: Text('Dark'),
-                ),
-                DropdownMenuItem(
-                  value: ThemeMode.system,
-                  child: Text('System'),
-                )
-              ],
-              onChanged: (value) {
-                ref
-                    .read(themeController.notifier)
-                    .updateCurrentThemeMode(value);
-              },
-            ),
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+          children: [Image.asset('assets/images/app_icon_dark.png')],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
 }
+//  DropdownButtonFormField<ThemeMode>(
+//               items: const [
+//                 DropdownMenuItem(
+//                   value: ThemeMode.light,
+//                   child: Text('Light'),
+//                 ),
+//                 DropdownMenuItem(
+//                   value: ThemeMode.dark,
+//                   child: Text('Dark'),
+//                 ),
+//                 DropdownMenuItem(
+//                   value: ThemeMode.system,
+//                   child: Text('System'),
+//                 )
+//               ],
+//               onChanged: (value) {
+//                 ref
+//                     .read(themeController.notifier)
+//                     .updateCurrentThemeMode(value);
+//               },
+//             ),
