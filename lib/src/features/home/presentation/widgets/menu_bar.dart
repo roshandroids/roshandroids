@@ -26,36 +26,32 @@ class MenuBar extends ConsumerWidget {
       child: Row(
         children: <Widget>[
           EntranceFader(
-            child: MouseRegion(
-              cursor: SystemMouseCursors.click,
-              child: GestureDetector(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        '< '.hardcoded,
+            child: GestureDetector(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '< '.hardcoded,
+                      style: Theme.of(context).textTheme.headline4,
+                    ),
+                    Text(
+                      'Roshan'.hardcoded,
+                      style: Theme.of(context).textTheme.headline4?.copyWith(
+                            fontFamily: 'Agustina',
+                          ),
+                    ),
+                    Flexible(
+                      child: Text(
+                        ' />'.hardcoded,
                         style: Theme.of(context).textTheme.headline4,
                       ),
-                      Text(
-                        'Roshan'.hardcoded,
-                        style: Theme.of(context).textTheme.headline4?.copyWith(
-                              fontFamily: 'Agustina',
-                            ),
-                      ),
-                      Flexible(
-                        child: Text(
-
-                          ' />'.hardcoded,
-                          style: Theme.of(context).textTheme.headline4,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
-            ),
+            ).showCursorOnHover.moveUpOnHover(),
           ),
           const Spacer(),
           ResponsiveVisibility(
@@ -81,10 +77,12 @@ class MenuBar extends ConsumerWidget {
             child: ResponsiveVisibility(
               visible: false,
               visibleWhen: const [Condition<bool>.smallerThan(name: TABLET)],
-              child: SvgPicture.asset(
-                'assets/svg/menu.svg',
-                color: Theme.of(context).iconTheme.color,
-              ),
+              child: GestureDetector(
+                child: SvgPicture.asset(
+                  'assets/svg/menu.svg',
+                  color: Theme.of(context).iconTheme.color,
+                ),
+              ).showCursorOnHover.moveUpOnHover(),
             ),
           ),
           EntranceFader(
@@ -97,7 +95,7 @@ class MenuBar extends ConsumerWidget {
                         isDarkModeEnabled ? ThemeMode.dark : ThemeMode.light,
                       );
                 },
-              ),
+              ).showCursorOnHover.moveUpOnHover(),
             ),
           ),
         ],
@@ -119,18 +117,19 @@ class MenuItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return EntranceFader(
-      child: MouseRegion(
-        cursor: SystemMouseCursors.click,
-        child: GestureDetector(
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Text(
-              title,
-            ),
+      child: GestureDetector(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            title,
+            style: Theme.of(context)
+                .textTheme
+                .headline6
+                ?.copyWith(fontWeight: FontWeight.w500),
           ),
         ),
-      ),
+      ).showCursorOnHover.moveUpOnHover(),
     );
   }
 }
