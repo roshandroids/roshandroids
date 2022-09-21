@@ -46,6 +46,7 @@ class MenuBar extends ConsumerWidget {
                       ),
                       Flexible(
                         child: Text(
+
                           ' />'.hardcoded,
                           style: Theme.of(context).textTheme.headline4,
                         ),

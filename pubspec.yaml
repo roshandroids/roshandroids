@@ -55,6 +55,7 @@ flutter:
   assets:
     - assets/images/
     - assets/svg/
+
   fonts:
     - family: Agustina
       fonts:

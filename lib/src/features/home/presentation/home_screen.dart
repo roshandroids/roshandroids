@@ -4,6 +4,7 @@ import 'package:motion/motion.dart';
 import 'package:roshandroids/src/features/home/presentation/animation/entrance_fader.dart';
 import 'package:roshandroids/src/features/home/presentation/widgets/menu_bar.dart';
 
+
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -24,6 +25,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+
       appBar: PreferredSize(
         preferredSize: Size(size.width, 66),
         child: const EntranceFader(
@@ -34,6 +36,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
             Motion.elevated(
               elevation: 0,
               shadow: false,
@@ -47,6 +50,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
           ],
         ),
       ),
+
     );
   }
 }
