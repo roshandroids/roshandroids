@@ -104,7 +104,7 @@ class DescriptionWidget extends StatelessWidget {
           Text(
             'A tech enthuiastic highly motivated guy learning technologies evolving around the world.'
                 .hardcoded,
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.justify,
             style: Theme.of(context).textTheme.bodyText1,
           ),
         ],
