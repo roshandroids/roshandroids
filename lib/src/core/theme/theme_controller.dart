@@ -6,35 +6,60 @@ import 'package:roshandroids/src/core/core.dart';
 final themeController =
     ChangeNotifierProvider<ThemeController>((ref) => ThemeController());
 
-class ThemeController extends ChangeNotifier {
+class ThemeController extends ChangeNotifier with WidgetsBindingObserver {
+  ThemeController() {
+    WidgetsBinding.instance.addObserver(this);
+    brightness = SchedulerBinding.instance.window.platformBrightness;
+  }
   ThemeMode? _thememode;
 
-  final Brightness brightness =
-      SchedulerBinding.instance.window.platformBrightness;
+  late Brightness brightness;
 
   ThemeMode get getCurrentThemeMode => _thememode ?? ThemeMode.system;
 
   ThemeData get getLightThemeData => lightThemeData;
   ThemeData get getDarkThemeData => darkThemeData;
 
+  bool get isDarkTheme => _isDarkTheme();
+
   ThemeData get getCurrentThemeData {
-    switch (getCurrentThemeMode) {
-      case ThemeMode.light:
-        return lightThemeData;
-      case ThemeMode.dark:
-        return darkThemeData;
-      case ThemeMode.system:
-        if (brightness == Brightness.light) {
-          return lightThemeData;
-        } else if (brightness == Brightness.dark) {
-          return darkThemeData;
-        }
+    if (_isDarkTheme()) {
+      return darkThemeData;
     }
     return lightThemeData;
+  }
+
+  bool _isDarkTheme() {
+    switch (getCurrentThemeMode) {
+      case ThemeMode.light:
+        return false;
+      case ThemeMode.dark:
+        return true;
+      case ThemeMode.system:
+        if (brightness == Brightness.light) {
+          return false;
+        }
+        return true;
+    }
   }
 
   void updateCurrentThemeMode(ThemeMode? updatedThemeMode) {
     _thememode = updatedThemeMode;
     notifyListeners();
+  }
+
+  @override
+  void didChangePlatformBrightness() {
+    brightness = SchedulerBinding.instance.window.platformBrightness;
+    updateCurrentThemeMode(
+      brightness == Brightness.dark ? ThemeMode.dark : ThemeMode.light,
+    );
+    super.didChangePlatformBrightness();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
   }
 }

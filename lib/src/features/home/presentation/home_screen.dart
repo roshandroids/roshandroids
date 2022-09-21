@@ -13,14 +13,12 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class _MyHomePageState extends ConsumerState<HomeScreen> {
-
   late final MotionController _motionController;
   @override
   void initState() {
     _motionController = MotionController();
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -38,37 +36,21 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Motion(
+
+            Motion.elevated(
+              elevation: 0,
+              shadow: false,
+              glare: false,
               controller: _motionController,
               child: const CircleAvatar(
                 radius: 100,
-                child: FlutterLogo(),
+                backgroundImage: AssetImage('assets/images/roshan.png'),
               ),
             )
           ],
+        ),
+      ),
 
-     
     );
   }
 }
-//  DropdownButtonFormField<ThemeMode>(
-//               items: const [
-//                 DropdownMenuItem(
-//                   value: ThemeMode.light,
-//                   child: Text('Light'),
-//                 ),
-//                 DropdownMenuItem(
-//                   value: ThemeMode.dark,
-//                   child: Text('Dark'),
-//                 ),
-//                 DropdownMenuItem(
-//                   value: ThemeMode.system,
-//                   child: Text('System'),
-//                 )
-//               ],
-//               onChanged: (value) {
-//                 ref
-//                     .read(themeController.notifier)
-//                     .updateCurrentThemeMode(value);
-//               },
-//             ),
