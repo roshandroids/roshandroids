@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
-import 'package:roshandroids/src/features/home/home.dart';
 
 class MenuBar extends ConsumerWidget {
   const MenuBar({super.key});
@@ -58,13 +57,13 @@ class MenuBar extends ConsumerWidget {
               child: Row(
                 children: [
                   MenuItem(
-                    title: 'About me'.hardcoded,
+                    title: 'Portfolio'.hardcoded,
+                  ),
+                  MenuItem(
+                    title: 'Blogs'.hardcoded,
                   ),
                   MenuItem(
                     title: 'Resume'.hardcoded,
-                  ),
-                  MenuItem(
-                    title: 'Blog'.hardcoded,
                   ),
                   MenuItem(
                     title: 'Contact'.hardcoded,
@@ -72,6 +71,7 @@ class MenuBar extends ConsumerWidget {
                 ],
               ),
             ),
+            const SizedBox(width: 10),
             ResponsiveVisibility(
               visible: false,
               visibleWhen: const [Condition<bool>.smallerThan(name: TABLET)],
@@ -93,6 +93,7 @@ class MenuBar extends ConsumerWidget {
                 },
               ).showCursorOnHover,
             ),
+            const SizedBox(width: 10),
           ],
         ),
       ),
@@ -115,7 +116,7 @@ class MenuItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
         child: Text(
           title,
           style: Theme.of(context)

@@ -1,4 +1,4 @@
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 
 class IntroBuilder extends StatelessWidget {
   const IntroBuilder({

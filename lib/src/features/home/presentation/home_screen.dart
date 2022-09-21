@@ -1,7 +1,6 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:motion/motion.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 import 'package:roshandroids/src/features/home/home.dart';
 
@@ -13,21 +12,37 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class _MyHomePageState extends ConsumerState<HomeScreen> {
-  late final MotionController _motionController;
-  late AssetImage profileImage;
+  late ScrollController _scrollController;
+  bool _showBackToTopButton = false;
 
   @override
   void initState() {
-    profileImage = const AssetImage('assets/images/roshan.png');
-    _motionController = MotionController();
+    _scrollController = ScrollController()
+      ..addListener(() {
+        setState(() {
+          if (_scrollController.offset >= 400) {
+            _showBackToTopButton = true;
+          } else {
+            _showBackToTopButton = false;
+          }
+        });
+      });
+
     super.initState();
   }
 
   @override
-  void didChangeDependencies() {
-    precacheImage(profileImage, context);
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
 
-    super.didChangeDependencies();
+  void _scrollToTop() {
+    _scrollController.animateTo(
+      0,
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.linear,
+    );
   }
 
   @override
@@ -39,77 +54,65 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
         preferredSize: Size(size.width, 66),
         child: const MenuBar(),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Wrap(
-              runAlignment: WrapAlignment.center,
-              direction: Axis.vertical,
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: [
-                EntranceFader(
-                  child: Container(
-                    margin: EdgeInsets.only(
-                      left: size.width / 10,
-                      top: size.height / 10,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).dividerColor,
-                      shape: BoxShape.circle,
-                    ),
-                    padding: const EdgeInsets.all(20),
-                    child: Motion.elevated(
-                      elevation: 0,
-                      shadow: false,
-                      glare: false,
-                      controller: _motionController,
-                      child: CircleAvatar(
-                        radius: 150,
-                        backgroundImage: profileImage,
-                      ),
-                    ),
-                  ).showCursorOnHover,
+      body: EntranceFader(
+        delay: const Duration(milliseconds: 350),
+        child: SingleChildScrollView(
+          controller: _scrollController,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ResponsiveRowColumn(
+                columnMainAxisAlignment: MainAxisAlignment.center,
+                columnSpacing: 20,
+                rowSpacing: 20,
+                rowPadding: EdgeInsets.only(
+                  left: size.width / 4,
+                  top: 50,
+                  bottom: 30,
+                  right: 30,
                 ),
-                const SizedBox(width: 20),
-                EntranceFader(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AnimatedTextKit(
-                        repeatForever: true,
-                        animatedTexts: [
-                          TypewriterAnimatedText(
-                            'Flutter Developer'.hardcoded,
-                            curve: Curves.ease,
-                            textStyle: Theme.of(context).textTheme.headline4,
-                            speed: const Duration(milliseconds: 50),
-                          ),
-                          TypewriterAnimatedText(
-                            'Frontend Developer'.hardcoded,
-                            curve: Curves.ease,
-                            textStyle: Theme.of(context).textTheme.headline4,
-                            speed: const Duration(milliseconds: 50),
-                          ),
-                        ],
-                      ),
-                      Text(
-                        'Roshan Shrestha',
-                        style: Theme.of(context)
-                            .textTheme
-                            .headline1
-                            ?.copyWith(fontWeight: FontWeight.w600),
-                      ),
-                    ],
+                columnPadding: const EdgeInsets.all(30),
+                layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+                    ? ResponsiveRowColumnType.COLUMN
+                    : ResponsiveRowColumnType.ROW,
+                children: [
+                  const ResponsiveRowColumnItem(
+                    child: ProfileImageWidget(),
                   ),
-                ),
-              ],
-            ),
-          ],
+                  ResponsiveRowColumnItem(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const DescriptionWidget(),
+                        const SizedBox(height: 10),
+                        Text(
+                          "Let's get connected : ".hardcoded,
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        const SizedBox(height: 10),
+                        const ProfileButtons(),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
+      floatingActionButton: _showBackToTopButton
+          ? EntranceFader(
+              delay: const Duration(milliseconds: 400),
+              child: FloatingActionButton(
+                onPressed: _scrollToTop,
+                child: const Icon(
+                  Icons.keyboard_arrow_up_rounded,
+                  size: 30,
+                ),
+              ),
+            ).showCursorOnHover
+          : null,
     );
   }
 }

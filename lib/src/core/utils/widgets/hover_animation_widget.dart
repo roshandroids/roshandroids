@@ -37,7 +37,7 @@ class _HoverAnimationWidgetState extends State<HoverAnimationWidget> {
                   borderRadius: BorderRadius.circular(6),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).secondaryHeaderColor,
+                      color: Theme.of(context).hoverColor,
                       blurRadius: 1,
                     ),
                   ],

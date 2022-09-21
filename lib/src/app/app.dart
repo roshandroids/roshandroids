@@ -29,7 +29,7 @@ class MyApp extends ConsumerWidget {
         breakpoints: [
           const ResponsiveBreakpoint.autoScale(480, name: MOBILE),
           const ResponsiveBreakpoint.resize(480, name: MOBILE),
-          const ResponsiveBreakpoint.resize(850, name: TABLET),
+          const ResponsiveBreakpoint.resize(980, name: TABLET),
           const ResponsiveBreakpoint.resize(1080, name: DESKTOP),
         ],
         background: ColoredBox(
