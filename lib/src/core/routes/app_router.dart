@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:roshandroids/src/core/core.dart';
-import 'package:roshandroids/src/features/home/presentation/home_screen.dart';
+import 'package:roshandroids/src/features/home/home.dart';
 
 enum AppRoute { home }
 

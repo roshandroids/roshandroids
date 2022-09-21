@@ -6,8 +6,6 @@ extension HoverExtensions on Widget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: this,
-      onHover: (event) {},
-      onExit: (event) {},
     );
   }
 
