@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:motion/motion.dart';
 import 'package:roshandroids/src/app/app.dart';
 import 'package:roshandroids/src/core/core.dart';
 
@@ -10,6 +11,9 @@ void main() async {
     WidgetsFlutterBinding.ensureInitialized();
     // turn off # in ther url on the web
     GoRouter.setUrlPathStrategy(UrlPathStrategy.path);
+
+    await Motion.instance.initialize();
+    Motion.instance.setUpdateInterval(60.fps);
 
     runApp(const ProviderScope(child: MyApp()));
 

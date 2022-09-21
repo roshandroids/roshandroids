@@ -1,14 +1,18 @@
+import 'package:day_night_switcher/day_night_switcher.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 import 'package:roshandroids/src/features/home/presentation/animation/entrance_fader.dart';
 
-class MenuBar extends StatelessWidget {
+class MenuBar extends ConsumerWidget {
   const MenuBar({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final currentThemeMode = ref.read(themeController).isDarkTheme;
     return Container(
-      height: 66,
       decoration: const BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -31,21 +35,21 @@ class MenuBar extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        '< ',
+                        '< '.hardcoded,
                         style: Theme.of(context).textTheme.headline4,
                       ),
                       Text(
-                        'Roshan',
+                        'Roshan'.hardcoded,
                         style: Theme.of(context).textTheme.headline4?.copyWith(
                               fontFamily: 'Agustina',
                             ),
                       ),
                       Flexible(
                         child: Text(
-                          ' />',
+                          ' />'.hardcoded,
                           style: Theme.of(context).textTheme.headline4,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -53,17 +57,47 @@ class MenuBar extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          MenuItem(
-            title: 'About me'.hardcoded,
+          ResponsiveVisibility(
+            hiddenWhen: const [Condition<bool>.smallerThan(name: TABLET)],
+            child: Row(
+              children: [
+                MenuItem(
+                  title: 'About me'.hardcoded,
+                ),
+                MenuItem(
+                  title: 'Resume'.hardcoded,
+                ),
+                MenuItem(
+                  title: 'Blog'.hardcoded,
+                ),
+                MenuItem(
+                  title: 'Contact'.hardcoded,
+                ),
+              ],
+            ),
           ),
-          MenuItem(
-            title: 'Resume'.hardcoded,
+          EntranceFader(
+            child: ResponsiveVisibility(
+              visible: false,
+              visibleWhen: const [Condition<bool>.smallerThan(name: TABLET)],
+              child: SvgPicture.asset(
+                'assets/svg/menu.svg',
+                color: Theme.of(context).iconTheme.color,
+              ),
+            ),
           ),
-          MenuItem(
-            title: 'Blog'.hardcoded,
-          ),
-          MenuItem(
-            title: 'Contact'.hardcoded,
+          EntranceFader(
+            child: ResponsiveVisibility(
+              hiddenWhen: const [Condition<bool>.smallerThan(name: TABLET)],
+              child: DayNightSwitcherIcon(
+                isDarkModeEnabled: currentThemeMode,
+                onStateChanged: (isDarkModeEnabled) {
+                  ref.read(themeController.notifier).updateCurrentThemeMode(
+                        isDarkModeEnabled ? ThemeMode.dark : ThemeMode.light,
+                      );
+                },
+              ),
+            ),
           ),
         ],
       ),

@@ -24,7 +24,6 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      drawer: const Drawer(),
       appBar: PreferredSize(
         preferredSize: Size(size.width, 66),
         child: const EntranceFader(
@@ -35,11 +34,14 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Motion(
+            Motion.elevated(
+              elevation: 0,
+              shadow: false,
+              glare: false,
               controller: _motionController,
               child: const CircleAvatar(
                 radius: 100,
-                child: FlutterLogo(),
+                backgroundImage: AssetImage('assets/images/roshan.png'),
               ),
             )
           ],
