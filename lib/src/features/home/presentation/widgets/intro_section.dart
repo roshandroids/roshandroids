@@ -17,10 +17,14 @@ class IntroSection extends StatelessWidget {
       borderType: BorderType.RRect,
       strokeWidth: 1.5,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+        padding: EdgeInsets.symmetric(
+          vertical: 20,
+          horizontal:
+              ResponsiveWrapper.of(context).isLargerThan(TABLET) ? 10 : 30,
+        ),
         width: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
             ? MediaQuery.of(context).size.width
-            : MediaQuery.of(context).size.width / 3,
+            : MediaQuery.of(context).size.width / 2.9,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Theme.of(context).dividerColor.withOpacity(.03),
@@ -86,7 +90,7 @@ class IntroSection extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              'A tech enthuiastic highly motivated guy learning technologies evolving around the world.'
+              'A tech enthuiastic highly motivated guy learning technologies evolving around the world. I have developed amazing apps with appealing UI and robust performance for platforms such as Android, iOS, Web and Desktop (Both MacOS and Windows) with Flutter so far.'
                   .hardcoded,
               textAlign: ResponsiveWrapper.of(context).isLargerThan(TABLET)
                   ? TextAlign.justify
@@ -96,7 +100,7 @@ class IntroSection extends StatelessWidget {
             const SizedBox(height: 20),
             Center(
               child: Text(
-                '👇🏻 Get connected 👇🏻',
+                '👇🏻 Get connected 👇🏻'.hardcoded,
                 style: Theme.of(context).textTheme.headline5?.copyWith(
                       fontWeight: FontWeight.bold,
                     ),
@@ -105,7 +109,8 @@ class IntroSection extends StatelessWidget {
             const SizedBox(height: 15),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: socialLinks
+              children: IconList()
+                  .socialLinks
                   .map(
                     (e) => CustomIconWidget(
                       customIconModel: e,

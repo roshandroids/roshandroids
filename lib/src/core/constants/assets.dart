@@ -19,8 +19,20 @@ class Assets {
   static const String photoshop = 'assets/svg/photoshop.svg';
   static const String xd = 'assets/svg/xd.svg';
 
-  // UI elements
+  /// Development tools
+  static const String vscode = 'assets/svg/vscode.svg';
+  static const String xcode = 'assets/images/xcode.svg';
+  static const String androidstudio = 'assets/images/androidstudio.svg';
+  static const String postman = 'assets/images/postman.svg';
+
   static const String hamMenu = 'assets/svg/menu.svg';
 
   static const String profileImage = 'assets/images/roshan.png';
+  static const String notFountImage = 'assets/images/404.png';
+
+  static const String android = 'assets/images/android.png';
+  static const String iOS = 'assets/images/iOS.png';
+  static const String mac = 'assets/images/mac.png';
+  static const String windows = 'assets/images/windows.png';
+  static const String web = 'assets/images/web.png';
 }

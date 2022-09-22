@@ -22,7 +22,7 @@ final ThemeData lightThemeData = FlexThemeData.light(
   ),
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
   useMaterial3: true,
-  fontFamily: GoogleFonts.robotoMono().fontFamily,
+  fontFamily: GoogleFonts.aBeeZee().fontFamily,
 );
 final ThemeData darkThemeData = FlexThemeData.dark(
   colors: const FlexSchemeColor(
@@ -44,5 +44,5 @@ final ThemeData darkThemeData = FlexThemeData.dark(
   ),
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
   useMaterial3: true,
-  fontFamily: GoogleFonts.robotoMono().fontFamily,
+  fontFamily: GoogleFonts.aBeeZee().fontFamily,
 );

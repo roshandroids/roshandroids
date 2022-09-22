@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 extension TextSizeExtension on Text {
-  Size getTextSize() {
+  Size get getTextSize {
     final textPainter = TextPainter(
       text: TextSpan(text: data, style: style),
       maxLines: 1,

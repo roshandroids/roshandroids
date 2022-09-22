@@ -14,21 +14,17 @@ class HomeScreen extends ConsumerStatefulWidget {
 class _MyHomePageState extends ConsumerState<HomeScreen> {
   late ScrollController _scrollController;
   late bool _showScrollButton;
-  late bool _showFooter;
 
   @override
   void initState() {
-    _showFooter = true;
     _showScrollButton = false;
     _scrollController = ScrollController()
       ..addListener(() {
         setState(() {
           if (_scrollController.offset >= 200) {
             _showScrollButton = true;
-            _showFooter = false;
           } else {
             _showScrollButton = false;
-            _showFooter = true;
           }
         });
       });
@@ -58,11 +54,9 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       persistentFooterAlignment: AlignmentDirectional.center,
       extendBodyBehindAppBar: true,
-      persistentFooterButtons: _showFooter
-          ? [
-              const FooterSection(),
-            ]
-          : null,
+      persistentFooterButtons: const [
+        FooterSection(),
+      ],
       appBar: PreferredSize(
         preferredSize: Size(size.width, 66),
         child: const MenuBarSection(),
@@ -77,21 +71,23 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
               columnMainAxisAlignment: MainAxisAlignment.center,
               columnSpacing: 20,
               rowSpacing: 20,
-              rowPadding: EdgeInsets.only(
-                left: size.width / 4,
-                top: 50,
-                bottom: 30,
-                right: 30,
+              rowPadding: const EdgeInsets.all(
+                20,
               ),
               columnPadding: const EdgeInsets.all(30),
               layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
                   ? ResponsiveRowColumnType.COLUMN
                   : ResponsiveRowColumnType.ROW,
-              children: const [
+              children: [
                 ResponsiveRowColumnItem(
+                  child: SizedBox(
+                    width: size.width / 4.5,
+                  ),
+                ),
+                const ResponsiveRowColumnItem(
                   child: ProfileImageSection(),
                 ),
-                ResponsiveRowColumnItem(
+                const ResponsiveRowColumnItem(
                   child: IntroSection(),
                 ),
               ],
@@ -108,15 +104,15 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
               layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
                   ? ResponsiveRowColumnType.COLUMN
                   : ResponsiveRowColumnType.ROW,
+              rowCrossAxisAlignment: CrossAxisAlignment.start,
+              columnCrossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ResponsiveRowColumnItem(
-                  child: buildSection(
-                    context,
-                    const AboutSection(),
-                  ),
+                  child: _buildExpandedWidget(context, const ServiceSection()),
                 ),
                 const ResponsiveRowColumnItem(
                   child: SkillSection(),
+                  // _buildExpandedWidget(context, const SkillSection()),
                 ),
               ],
             ),
@@ -139,12 +135,11 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
     );
   }
 
-  Widget buildSection(BuildContext context, Widget child) {
-    if (ResponsiveWrapper.of(context).isLargerThan(TABLET)) {
-      return Expanded(
-        child: child,
-      );
+  Widget _buildExpandedWidget(BuildContext context, Widget child) {
+    if (ResponsiveWrapper.of(context).isDesktop) {
+      return Expanded(child: child);
+    } else {
+      return child;
     }
-    return child;
   }
 }

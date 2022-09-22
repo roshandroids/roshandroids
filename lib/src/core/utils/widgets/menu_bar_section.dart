@@ -2,6 +2,7 @@ import 'package:day_night_switcher/day_night_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 
@@ -25,30 +26,35 @@ class MenuBarSection extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Row(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    '< '.hardcoded,
-                    style: Theme.of(context).textTheme.headline4,
-                  ),
-                  Text(
-                    'Roshan'.hardcoded,
-                    style: Theme.of(context).textTheme.headline4?.copyWith(
-                          fontFamily: 'Agustina',
-                        ),
-                  ),
-                  Flexible(
-                    child: Text(
-                      ' />'.hardcoded,
+            GestureDetector(
+              onTap: () {
+                context.goNamed(RoutePaths.homeRoute.routeName);
+              },
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '< '.hardcoded,
                       style: Theme.of(context).textTheme.headline4,
                     ),
-                  ),
-                ],
-              ),
-            ).showCursorOnHover,
+                    Text(
+                      'Roshan'.hardcoded,
+                      style: Theme.of(context).textTheme.headline4?.copyWith(
+                            fontFamily: 'Agustina',
+                          ),
+                    ),
+                    Flexible(
+                      child: Text(
+                        ' />'.hardcoded,
+                        style: Theme.of(context).textTheme.headline4,
+                      ),
+                    ),
+                  ],
+                ),
+              ).showCursorOnHover,
+            ),
             const Spacer(),
             ResponsiveVisibility(
               hiddenWhen: const [Condition<bool>.smallerThan(name: TABLET)],
@@ -56,15 +62,24 @@ class MenuBarSection extends ConsumerWidget {
                 children: [
                   MenuItem(
                     title: 'Portfolio'.hardcoded,
+                    appRouteModel: AppRouteModel(
+                      routeName: 'portfolio',
+                      path: '/portfolio',
+                    ),
                   ),
                   MenuItem(
                     title: 'Blogs'.hardcoded,
+                    appRouteModel: AppRouteModel(
+                      routeName: 'blogs',
+                      path: '/blogs',
+                    ),
                   ),
                   MenuItem(
                     title: 'Resume'.hardcoded,
-                  ),
-                  MenuItem(
-                    title: 'Contact'.hardcoded,
+                    appRouteModel: AppRouteModel(
+                      routeName: 'resume',
+                      path: '/resume',
+                    ),
                   ),
                 ],
               ),
@@ -103,20 +118,21 @@ class MenuItem extends StatelessWidget {
   const MenuItem({
     super.key,
     required this.title,
-    this.onTap,
+    required this.appRouteModel,
   });
 
   final String title;
-  final VoidCallback? onTap;
+
+  final AppRouteModel appRouteModel;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () => context.go(appRouteModel.routeName),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
         child: Text(
-          title,
+          title.hardcoded,
           style: Theme.of(context)
               .textTheme
               .headline6

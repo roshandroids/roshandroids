@@ -19,10 +19,11 @@ class CustomIconWidget extends StatelessWidget {
       hoverColor: splashColor,
       highlightColor: splashColor,
       onTap: () {},
+      onHover: (value) {},
       child: Container(
         alignment: Alignment.center,
         padding: const EdgeInsets.all(6),
-        margin: const EdgeInsets.only(right: 15),
+        margin: const EdgeInsets.only(right: 10),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: customIconModel.enableBackgroundColor

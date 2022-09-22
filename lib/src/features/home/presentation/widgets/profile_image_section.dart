@@ -32,8 +32,8 @@ class _ProfileImageSectionState extends State<ProfileImageSection> {
         boxShadow: [
           BoxShadow(
             blurRadius: 15,
-            color: Theme.of(context).dividerColor.withOpacity(.08),
-            spreadRadius: 15,
+            color: Theme.of(context).dividerColor.withOpacity(.05),
+            spreadRadius: 10,
           )
         ],
       ),
@@ -45,9 +45,9 @@ class _ProfileImageSectionState extends State<ProfileImageSection> {
         borderType: BorderType.Circle,
         strokeWidth: 1.5,
         child: Motion.elevated(
-          elevation: 0,
-          shadow: false,
           glare: false,
+          shadow: false,
+          elevation: 150,
           child: const CircleAvatar(
             radius: 200,
             backgroundImage: AssetImage(Assets.profileImage),

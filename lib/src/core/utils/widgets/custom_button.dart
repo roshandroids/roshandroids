@@ -14,6 +14,7 @@ class CustomButton extends StatelessWidget {
     this.isLoading = false,
     this.splashColor = Colors.transparent,
     this.onPressed,
+    this.padding = EdgeInsets.zero,
   });
   final String title;
   final Color? borderColor;
@@ -25,6 +26,7 @@ class CustomButton extends StatelessWidget {
   final bool isLoading;
   final Color splashColor;
   final VoidCallback? onPressed;
+  final EdgeInsets padding;
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +51,7 @@ class CustomButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 600),
+            padding: padding,
             child: isLoading
                 ? const CircularProgressIndicator()
                 : Text(
