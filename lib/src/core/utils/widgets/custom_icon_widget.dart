@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:roshandroids/src/core/core.dart';
 
-class SocialIconWidget<T> extends StatelessWidget {
-  const SocialIconWidget({
+class CustomIconWidget extends StatelessWidget {
+  const CustomIconWidget({
     super.key,
     required this.customIconModel,
   });
@@ -26,7 +26,7 @@ class SocialIconWidget<T> extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: customIconModel.enableBackgroundColor
-              ? Theme.of(context).dividerColor
+              ? Theme.of(context).dividerColor.withOpacity(.08)
               : null,
           boxShadow: customIconModel.enableShadow
               ? [
@@ -34,7 +34,7 @@ class SocialIconWidget<T> extends StatelessWidget {
                     offset: const Offset(0, 1),
                     blurRadius: 1,
                     spreadRadius: 1,
-                    color: Theme.of(context).dividerColor,
+                    color: Theme.of(context).dividerColor.withOpacity(.03),
                   ),
                 ]
               : null,

@@ -13,12 +13,12 @@ class MenuBarSection extends ConsumerWidget {
     final currentThemeMode = ref.read(themeController).isDarkTheme;
     return EntranceFader(
       child: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: Color(0x1A000000),
-              offset: Offset(0, 3),
-              blurRadius: 1,
+              color: Theme.of(context).dividerColor.withOpacity(.03),
+              offset: const Offset(0, 1),
+              blurRadius: 20,
             ),
           ],
         ),
@@ -75,7 +75,7 @@ class MenuBarSection extends ConsumerWidget {
               visibleWhen: const [Condition<bool>.smallerThan(name: TABLET)],
               child: GestureDetector(
                 child: SvgPicture.asset(
-                  AppIcons.hamMenu,
+                  Assets.hamMenu,
                   color: Theme.of(context).iconTheme.color,
                 ),
               ).showCursorOnHover.moveUpOnHover(),

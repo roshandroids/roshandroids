@@ -2,15 +2,15 @@ import 'package:roshandroids/src/core/core.dart';
 
 final designTools = [
   CustomIconModel(
-    svgPath: AppIcons.figma,
+    svgPath: Assets.figma,
     link: '',
   ),
   CustomIconModel(
-    svgPath: AppIcons.photoshop,
+    svgPath: Assets.photoshop,
     link: '',
   ),
   CustomIconModel(
-    svgPath: AppIcons.xd,
+    svgPath: Assets.xd,
     link: '',
   ),
 ];

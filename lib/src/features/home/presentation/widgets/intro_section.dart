@@ -13,14 +13,18 @@ class IntroSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return DottedBorder(
       color: Theme.of(context).dividerColor,
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
       radius: const Radius.circular(20),
       borderType: BorderType.RRect,
       strokeWidth: 1.5,
-      child: SizedBox(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         width: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
             ? MediaQuery.of(context).size.width
             : MediaQuery.of(context).size.width / 3,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Theme.of(context).dividerColor.withOpacity(.03),
+        ),
         child: Column(
           crossAxisAlignment:
               ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
@@ -103,7 +107,7 @@ class IntroSection extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: socialLinks
                   .map(
-                    (e) => SocialIconWidget<CustomIconModel>(
+                    (e) => CustomIconWidget(
                       customIconModel: e,
                     ),
                   )

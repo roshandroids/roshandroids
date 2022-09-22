@@ -13,18 +13,22 @@ class HomeScreen extends ConsumerStatefulWidget {
 
 class _MyHomePageState extends ConsumerState<HomeScreen> {
   late ScrollController _scrollController;
-  late ValueNotifier<bool> _visibility;
+  late bool _showScrollButton;
+  late bool _showFooter;
 
   @override
   void initState() {
-    _visibility = ValueNotifier<bool>(false);
+    _showFooter = true;
+    _showScrollButton = false;
     _scrollController = ScrollController()
       ..addListener(() {
         setState(() {
-          if (_scrollController.offset >= 400) {
-            _visibility.value = true;
+          if (_scrollController.offset >= 200) {
+            _showScrollButton = true;
+            _showFooter = false;
           } else {
-            _visibility.value = false;
+            _showScrollButton = false;
+            _showFooter = true;
           }
         });
       });
@@ -50,88 +54,88 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return ValueListenableBuilder<bool>(
-      valueListenable: _visibility,
-      builder: (context, visible, child) {
-        return Scaffold(
-          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-          persistentFooterAlignment: AlignmentDirectional.center,
-          extendBodyBehindAppBar: true,
-          persistentFooterButtons: [
-            if (visible) const FooterSection(),
-          ],
-          appBar: PreferredSize(
-            preferredSize: Size(size.width, 66),
-            child: const MenuBarSection(),
-          ),
-          body: EntranceFader(
-            delay: const Duration(milliseconds: 350),
-            child: ListView(
-              controller: _scrollController,
-              physics: const BouncingScrollPhysics(),
-              children: [
-                ResponsiveRowColumn(
-                  columnMainAxisAlignment: MainAxisAlignment.center,
-                  columnSpacing: 20,
-                  rowSpacing: 20,
-                  rowPadding: EdgeInsets.only(
-                    left: size.width / 4,
-                    top: 50,
-                    bottom: 30,
-                    right: 30,
-                  ),
-                  columnPadding: const EdgeInsets.all(30),
-                  layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
-                      ? ResponsiveRowColumnType.COLUMN
-                      : ResponsiveRowColumnType.ROW,
-                  children: const [
-                    ResponsiveRowColumnItem(
-                      child: ProfileImageSection(),
-                    ),
-                    ResponsiveRowColumnItem(
-                      child: IntroSection(),
-                    ),
-                  ],
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      persistentFooterAlignment: AlignmentDirectional.center,
+      extendBodyBehindAppBar: true,
+      persistentFooterButtons: _showFooter
+          ? [
+              const FooterSection(),
+            ]
+          : null,
+      appBar: PreferredSize(
+        preferredSize: Size(size.width, 66),
+        child: const MenuBarSection(),
+      ),
+      body: EntranceFader(
+        delay: const Duration(milliseconds: 350),
+        child: ListView(
+          controller: _scrollController,
+          physics: const BouncingScrollPhysics(),
+          children: [
+            ResponsiveRowColumn(
+              columnMainAxisAlignment: MainAxisAlignment.center,
+              columnSpacing: 20,
+              rowSpacing: 20,
+              rowPadding: EdgeInsets.only(
+                left: size.width / 4,
+                top: 50,
+                bottom: 30,
+                right: 30,
+              ),
+              columnPadding: const EdgeInsets.all(30),
+              layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+                  ? ResponsiveRowColumnType.COLUMN
+                  : ResponsiveRowColumnType.ROW,
+              children: const [
+                ResponsiveRowColumnItem(
+                  child: ProfileImageSection(),
                 ),
-                const SizedBox(height: 15),
-                ResponsiveRowColumn(
-                  columnMainAxisAlignment: MainAxisAlignment.center,
-                  columnSpacing: 20,
-                  rowSpacing: 20,
-                  rowPadding: const EdgeInsets.all(
-                    30,
-                  ),
-                  columnPadding: const EdgeInsets.all(30),
-                  layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
-                      ? ResponsiveRowColumnType.COLUMN
-                      : ResponsiveRowColumnType.ROW,
-                  children: [
-                    ResponsiveRowColumnItem(
-                      child: buildSection(
-                        context,
-                        const AboutSection(),
-                      ),
-                    ),
-                  ],
+                ResponsiveRowColumnItem(
+                  child: IntroSection(),
                 ),
               ],
             ),
-          ),
-          floatingActionButton: visible
-              ? EntranceFader(
-                  child: FloatingActionButton(
-                    backgroundColor: Theme.of(context).secondaryHeaderColor,
-                    onPressed: _scrollToTop,
-                    highlightElevation: 3,
-                    child: const Icon(
-                      Icons.keyboard_arrow_up_rounded,
-                      size: 30,
-                    ),
+            const SizedBox(height: 15),
+            ResponsiveRowColumn(
+              columnMainAxisAlignment: MainAxisAlignment.center,
+              columnSpacing: 20,
+              rowSpacing: 20,
+              rowPadding: const EdgeInsets.all(
+                30,
+              ),
+              columnPadding: const EdgeInsets.all(30),
+              layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+                  ? ResponsiveRowColumnType.COLUMN
+                  : ResponsiveRowColumnType.ROW,
+              children: [
+                ResponsiveRowColumnItem(
+                  child: buildSection(
+                    context,
+                    const AboutSection(),
                   ),
-                ).showCursorOnHover
-              : null,
-        );
-      },
+                ),
+                const ResponsiveRowColumnItem(
+                  child: SkillSection(),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: _showScrollButton
+          ? EntranceFader(
+              child: FloatingActionButton(
+                backgroundColor: Theme.of(context).secondaryHeaderColor,
+                onPressed: _scrollToTop,
+                highlightElevation: 3,
+                child: const Icon(
+                  Icons.keyboard_arrow_up_rounded,
+                  size: 30,
+                ),
+              ),
+            ).showCursorOnHover
+          : null,
     );
   }
 

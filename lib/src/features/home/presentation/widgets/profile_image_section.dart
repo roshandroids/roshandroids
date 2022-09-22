@@ -25,25 +25,32 @@ class _ProfileImageSectionState extends State<ProfileImageSection> {
 
   @override
   Widget build(BuildContext context) {
-    return DottedBorder(
-      color: Theme.of(context).dividerColor,
-      radius: const Radius.circular(20),
+    return Container(
+      decoration: BoxDecoration(
+        color: Theme.of(context).dividerColor,
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 15,
+            color: Theme.of(context).dividerColor.withOpacity(.08),
+            spreadRadius: 15,
+          )
+        ],
+      ),
       padding: const EdgeInsets.all(5),
-      borderType: BorderType.Circle,
-      strokeWidth: 1.5,
-      child: Container(
-        decoration: BoxDecoration(
-          color: Theme.of(context).dividerColor,
-          shape: BoxShape.circle,
-        ),
+      child: DottedBorder(
+        color: Theme.of(context).dividerColor,
+        radius: const Radius.circular(20),
         padding: const EdgeInsets.all(5),
+        borderType: BorderType.Circle,
+        strokeWidth: 1.5,
         child: Motion.elevated(
           elevation: 0,
           shadow: false,
           glare: false,
           child: const CircleAvatar(
             radius: 200,
-            backgroundImage: AssetImage(AppIcons.profileImage),
+            backgroundImage: AssetImage(Assets.profileImage),
           ),
         ),
       ),

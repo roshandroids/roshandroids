@@ -2,27 +2,27 @@ import 'package:roshandroids/src/core/core.dart';
 
 final programmingLanguages = [
   CustomIconModel(
-    svgPath: AppIcons.flutter,
+    svgPath: Assets.flutter,
   ),
   CustomIconModel(
-    svgPath: AppIcons.dart,
+    svgPath: Assets.dart,
   ),
   CustomIconModel(
-    svgPath: AppIcons.html,
+    svgPath: Assets.html,
   ),
   CustomIconModel(
-    svgPath: AppIcons.css,
+    svgPath: Assets.css,
   ),
   CustomIconModel(
-    svgPath: AppIcons.java,
+    svgPath: Assets.java,
   ),
   CustomIconModel(
-    svgPath: AppIcons.javascript,
+    svgPath: Assets.javascript,
   ),
   CustomIconModel(
-    svgPath: AppIcons.python,
+    svgPath: Assets.python,
   ),
   CustomIconModel(
-    svgPath: AppIcons.git,
+    svgPath: Assets.git,
   ),
 ];

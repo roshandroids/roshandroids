@@ -1,4 +1,4 @@
-class AppIcons {
+class Assets {
   /// Programming languages
   static const String css = 'assets/svg/css.svg';
   static const String dart = 'assets/svg/dart.svg';
