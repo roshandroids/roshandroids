@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:motion/motion.dart';
 import 'package:roshandroids/src/app/app.dart';
 import 'package:roshandroids/src/core/core.dart';
 

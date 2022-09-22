@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 class SocialIconWidget<T> extends StatelessWidget {
   const SocialIconWidget({
     super.key,
-    required this.socialLinkModel,
+    required this.customIconModel,
   });
-  final SocialLinkModel socialLinkModel;
+  final CustomIconModel customIconModel;
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +25,42 @@ class SocialIconWidget<T> extends StatelessWidget {
         margin: const EdgeInsets.only(right: 15),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Theme.of(context).dividerColor,
-          boxShadow: [
-            BoxShadow(
-              offset: const Offset(0, 1),
-              blurRadius: 1,
-              spreadRadius: 1,
-              color: Theme.of(context).dividerColor,
-            ),
-          ],
+          color: customIconModel.enableBackgroundColor
+              ? Theme.of(context).dividerColor
+              : null,
+          boxShadow: customIconModel.enableShadow
+              ? [
+                  BoxShadow(
+                    offset: const Offset(0, 1),
+                    blurRadius: 1,
+                    spreadRadius: 1,
+                    color: Theme.of(context).dividerColor,
+                  ),
+                ]
+              : null,
         ),
-        child: Icon(
-          socialLinkModel.icon,
-          size: socialLinkModel.size,
-          color: socialLinkModel.color,
-        ),
+        child: customIconModel.iconData != null
+            ? Icon(
+                customIconModel.iconData,
+                size: customIconModel.size,
+                color: customIconModel.color,
+              )
+            : customIconModel.svgPath != null
+                ? SvgPicture.asset(
+                    customIconModel.svgPath!,
+                    height: customIconModel.size,
+                    width: customIconModel.size,
+                    color: customIconModel.color,
+                  )
+                : customIconModel.imagePath != null
+                    ? Image.asset(
+                        customIconModel.imagePath!,
+                        height: customIconModel.size,
+                        width: customIconModel.size,
+                        color: customIconModel.color,
+                        fit: BoxFit.contain,
+                      )
+                    : const SizedBox(),
       ),
     ).showCursorOnHover.moveUpOnHover(enableGlow: false);
   }

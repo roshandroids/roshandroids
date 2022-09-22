@@ -46,16 +46,18 @@ class EntranceFaderState extends State<EntranceFader>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _controller,
-      builder: (context, child) => Opacity(
-        opacity: _controller.value,
-        child: Transform.translate(
-          offset: Offset(
-            _dxAnimation.value.toDouble(),
-            _dyAnimation.value.toDouble(),
+    return RepaintBoundary(
+      child: AnimatedBuilder(
+        animation: _controller,
+        builder: (context, child) => Opacity(
+          opacity: _controller.value,
+          child: Transform.translate(
+            offset: Offset(
+              _dxAnimation.value.toDouble(),
+              _dyAnimation.value.toDouble(),
+            ),
+            child: widget.child,
           ),
-          child: widget.child,
         ),
       ),
     );

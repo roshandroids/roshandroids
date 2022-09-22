@@ -30,7 +30,7 @@ class MyApp extends ConsumerWidget {
           const ResponsiveBreakpoint.autoScale(480, name: MOBILE),
           const ResponsiveBreakpoint.resize(480, name: MOBILE),
           const ResponsiveBreakpoint.resize(980, name: TABLET),
-          const ResponsiveBreakpoint.resize(1080, name: DESKTOP),
+          const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
         ],
         background: ColoredBox(
           color: themeData.getCurrentThemeData.backgroundColor,

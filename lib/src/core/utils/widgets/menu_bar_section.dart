@@ -5,8 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 
-class MenuBar extends ConsumerWidget {
-  const MenuBar({super.key});
+class MenuBarSection extends ConsumerWidget {
+  const MenuBarSection({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -25,30 +25,28 @@ class MenuBar extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Row(
           children: <Widget>[
-            GestureDetector(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      '< '.hardcoded,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    '< '.hardcoded,
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                  Text(
+                    'Roshan'.hardcoded,
+                    style: Theme.of(context).textTheme.headline4?.copyWith(
+                          fontFamily: 'Agustina',
+                        ),
+                  ),
+                  Flexible(
+                    child: Text(
+                      ' />'.hardcoded,
                       style: Theme.of(context).textTheme.headline4,
                     ),
-                    Text(
-                      'Roshan'.hardcoded,
-                      style: Theme.of(context).textTheme.headline4?.copyWith(
-                            fontFamily: 'Agustina',
-                          ),
-                    ),
-                    Flexible(
-                      child: Text(
-                        ' />'.hardcoded,
-                        style: Theme.of(context).textTheme.headline4,
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ).showCursorOnHover,
             const Spacer(),
@@ -77,7 +75,7 @@ class MenuBar extends ConsumerWidget {
               visibleWhen: const [Condition<bool>.smallerThan(name: TABLET)],
               child: GestureDetector(
                 child: SvgPicture.asset(
-                  'assets/svg/menu.svg',
+                  AppIcons.hamMenu,
                   color: Theme.of(context).iconTheme.color,
                 ),
               ).showCursorOnHover.moveUpOnHover(),
