@@ -3,6 +3,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class IntroSection extends StatelessWidget {
   const IntroSection({
@@ -117,6 +118,33 @@ class IntroSection extends StatelessWidget {
                     ),
                   )
                   .toList(),
+            ),
+            const SizedBox(height: 15),
+            Center(
+              child: GestureDetector(
+                onTap: () async {
+                  final uri = Uri.parse('https://roshansth.com.np/#/');
+                  if (await canLaunchUrl(uri)) {
+                    await launchUrl(uri);
+                  }
+                },
+                child: Column(
+                  children: [
+                    Text(
+                      'Checkout my another website'.hardcoded,
+                      style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    Text(
+                      'https://roshansth.com.np/'.hardcoded,
+                      style: Theme.of(context).textTheme.button?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ).showCursorOnHover.moveUpOnHover(),
+                  ],
+                ),
+              ),
             ),
           ],
         ),

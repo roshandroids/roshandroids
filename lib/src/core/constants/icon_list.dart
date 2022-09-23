@@ -79,34 +79,37 @@ class IconList {
     CustomIconModel(
       name: 'Github',
       iconData: MaterialCommunityIcons.github,
+      link: 'https://github.com/roshandroids',
     ),
     CustomIconModel(
       name: 'Linked In',
       iconData: MaterialCommunityIcons.linkedin,
+      link: 'https://www.linkedin.com/in/roshandroids/',
     ),
     CustomIconModel(
       name: 'Discord',
       iconData: MaterialCommunityIcons.discord,
+      link: 'Add me @ Rowshan#5942',
     ),
     CustomIconModel(
       name: 'Twitter',
       iconData: MaterialCommunityIcons.twitter,
+      link: 'https://twitter.com/roshansth56',
     ),
     CustomIconModel(
       name: 'Facebook',
       iconData: MaterialCommunityIcons.facebook,
-    ),
-    CustomIconModel(
-      name: 'Facebook Messanger',
-      iconData: MaterialCommunityIcons.facebook_messenger,
+      link: 'https://www.facebook.com/roshandroids/',
     ),
     CustomIconModel(
       name: 'Instagram',
       iconData: FontAwesome.instagram,
+      link: 'https://www.instagram.com/roshandroids/',
     ),
     CustomIconModel(
       name: 'Gmail',
       iconData: MaterialCommunityIcons.gmail,
+      link: 'Shrestharoshan776@gmail.com',
     ),
   ];
 

@@ -1,4 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:roshandroids/src/core/core.dart';
 
@@ -7,44 +6,40 @@ class SkillSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DottedBorder(
-      radius: const Radius.circular(20),
-      borderType: BorderType.RRect,
-      child: Container(
-        padding: const EdgeInsets.only(left: 15, top: 10, bottom: 15),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Theme.of(context).dividerColor.withOpacity(.03),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Tools and Languages'.hardcoded,
-              style: Theme.of(context).textTheme.headline5?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-            ),
-            SkillSectionItem(
-              items: IconList().designTools,
-              text0: '🎨 ',
-              text1: 'Design Tools',
-              text2: ' 🧑‍🎨',
-            ),
-            SkillSectionItem(
-              items: IconList().developmentTools,
-              text0: '⚙️ ',
-              text1: 'Development Tools',
-              text2: ' ⚒️',
-            ),
-            SkillSectionItem(
-              items: IconList().programmingLanguages,
-              text0: '< ',
-              text1: 'Language',
-              text2: ' />',
-            )
-          ],
-        ),
+    return Container(
+      padding: const EdgeInsets.only(left: 15, top: 10, bottom: 15),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Theme.of(context).dividerColor.withOpacity(.03),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Tools and Languages'.hardcoded,
+            style: Theme.of(context).textTheme.headline5?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+          SkillSectionItem(
+            items: IconList().designTools,
+            text0: '🎨 ',
+            text1: 'Design Tools',
+            text2: ' 🧑‍🎨',
+          ),
+          SkillSectionItem(
+            items: IconList().developmentTools,
+            text0: '⚙️  ',
+            text1: 'Development Tools',
+            text2: ' ⚒️',
+          ),
+          SkillSectionItem(
+            items: IconList().programmingLanguages,
+            text0: '< ',
+            text1: 'Language',
+            text2: ' />',
+          )
+        ],
       ),
     );
   }
@@ -109,7 +104,7 @@ class SkillSectionItem extends StatelessWidget {
               )
               .toList(),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 5),
       ],
     );
   }
