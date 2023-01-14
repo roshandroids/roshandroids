@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 import 'package:roshandroids/src/features/home/home.dart';
 
@@ -52,15 +49,6 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      persistentFooterAlignment: AlignmentDirectional.center,
-      extendBodyBehindAppBar: true,
-      persistentFooterButtons: const [
-        FooterSection(),
-      ],
-      appBar: PreferredSize(
-        preferredSize: Size(size.width, 66),
-        child: const MenuBarSection(),
-      ),
       body: EntranceFader(
         delay: const Duration(milliseconds: 350),
         child: ListView(
@@ -108,7 +96,10 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
               columnCrossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ResponsiveRowColumnItem(
-                  child: _buildExpandedWidget(context, const ServiceSection()),
+                  child: _buildExpandedWidget(
+                    context,
+                    const ServiceSection(),
+                  ),
                 ),
                 const ResponsiveRowColumnItem(
                   child: SkillSection(),

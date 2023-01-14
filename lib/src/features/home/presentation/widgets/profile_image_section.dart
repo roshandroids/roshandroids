@@ -1,5 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
-import 'package:flutter/material.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 class ProfileImageSection extends StatefulWidget {
@@ -38,20 +36,13 @@ class _ProfileImageSectionState extends State<ProfileImageSection> {
         ],
       ),
       padding: const EdgeInsets.all(5),
-      child: DottedBorder(
-        color: Theme.of(context).dividerColor,
-        radius: const Radius.circular(20),
-        padding: const EdgeInsets.all(5),
-        borderType: BorderType.Circle,
-        strokeWidth: 1.5,
-        child: Motion.elevated(
-          glare: false,
-          shadow: false,
-          elevation: 150,
-          child: const CircleAvatar(
-            radius: 200,
-            backgroundImage: AssetImage(Assets.profileImage),
-          ),
+      child: Motion.elevated(
+        glare: false,
+        shadow: false,
+        elevation: 150,
+        child: const CircleAvatar(
+          radius: 200,
+          backgroundImage: AssetImage(Assets.profileImage),
         ),
       ),
     ).showCursorOnHover;

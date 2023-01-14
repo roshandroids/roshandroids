@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:roshandroids/src/core/core.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CustomIconWidget extends StatelessWidget {
   const CustomIconWidget({

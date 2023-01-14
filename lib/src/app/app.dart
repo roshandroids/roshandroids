@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 class MyApp extends ConsumerWidget {

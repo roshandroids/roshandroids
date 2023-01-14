@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 final themeController =
