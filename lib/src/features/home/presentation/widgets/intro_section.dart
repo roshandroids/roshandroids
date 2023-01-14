@@ -56,7 +56,7 @@ class IntroSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.play_arrow_rounded,
+                CustomIcons.play_arrow,
                 color: Theme.of(context).errorColor,
               ),
               AnimatedTextKit(
@@ -86,7 +86,7 @@ class IntroSection extends StatelessWidget {
                 ? TextAlign.justify
                 : TextAlign.center,
             style: Theme.of(context).textTheme.bodyText1,
-          ),
+          ).selectable,
           const SizedBox(height: 20),
           Center(
             child: Text(

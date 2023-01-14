@@ -10,7 +10,6 @@ environment:
 
 dependencies:
   animated_text_kit: ^4.2.2
-  cupertino_icons: ^1.0.2
   day_night_switcher: ^0.2.0+1
   dotted_border: ^2.0.0+2
   flex_color_scheme: ^6.0.0
@@ -19,7 +18,6 @@ dependencies:
   flutter_glow: ^0.2.0
   flutter_riverpod: ^1.0.4
   flutter_svg: ^1.1.5
-  flutter_vector_icons: ^2.0.0
   go_router: ^4.5.0
   google_fonts: ^3.0.1
   motion: ^1.3.3
@@ -55,7 +53,6 @@ flutter_icons:
     image_path: "assets/images/app_icon_light.png"
 
 flutter:
-  uses-material-design: true
   assets:
     - assets/images/
     - assets/svg/
@@ -65,9 +62,7 @@ flutter:
     - family: Agustina
       fonts:
         - asset: assets/fonts/agustina.otf
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/CustomIcons.ttf

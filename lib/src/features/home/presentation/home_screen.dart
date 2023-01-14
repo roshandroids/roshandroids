@@ -117,7 +117,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
                 onPressed: _scrollToTop,
                 highlightElevation: 3,
                 child: const Icon(
-                  Icons.keyboard_arrow_up_rounded,
+                  CustomIcons.keyboard_arrow_up,
                   size: 30,
                 ),
               ),

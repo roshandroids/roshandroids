@@ -23,11 +23,17 @@ void main() async {
           backgroundColor: Colors.red,
           title: Text('An error occurred'.hardcoded),
         ),
-        body: Center(child: Text(details.toString())),
+        body: Center(
+          child: Text(
+            details.toString(),
+          ),
+        ),
       );
     };
   }, (Object error, StackTrace stack) {
     // * Log any errors to console
-    debugPrint(error.toString());
+    debugPrint(
+      error.toString(),
+    );
   });
 }

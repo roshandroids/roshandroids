@@ -1,4 +1,3 @@
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 class IconList {
@@ -78,37 +77,37 @@ class IconList {
   final socialLinks = [
     CustomIconModel(
       name: 'Github',
-      iconData: MaterialCommunityIcons.github,
+      iconData: CustomIcons.github,
       link: 'https://github.com/roshandroids',
     ),
     CustomIconModel(
       name: 'Linked In',
-      iconData: MaterialCommunityIcons.linkedin,
+      iconData: CustomIcons.linkedin,
       link: 'https://www.linkedin.com/in/roshandroids/',
     ),
     CustomIconModel(
       name: 'Discord',
-      iconData: MaterialCommunityIcons.discord,
+      iconData: CustomIcons.discord,
       link: 'Add me @ Rowshan#5942',
     ),
     CustomIconModel(
       name: 'Twitter',
-      iconData: MaterialCommunityIcons.twitter,
+      iconData: CustomIcons.twitter,
       link: 'https://twitter.com/roshansth56',
     ),
     CustomIconModel(
       name: 'Facebook',
-      iconData: MaterialCommunityIcons.facebook,
+      iconData: CustomIcons.facebook,
       link: 'https://www.facebook.com/roshandroids/',
     ),
     CustomIconModel(
       name: 'Instagram',
-      iconData: FontAwesome.instagram,
+      iconData: CustomIcons.instagram,
       link: 'https://www.instagram.com/roshandroids/',
     ),
     CustomIconModel(
       name: 'Gmail',
-      iconData: MaterialCommunityIcons.gmail,
+      iconData: CustomIcons.email,
       link: 'Shrestharoshan776@gmail.com',
     ),
   ];

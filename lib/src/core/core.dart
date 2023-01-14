@@ -1,6 +1,6 @@
 /// Package imports
 export 'package:animated_text_kit/animated_text_kit.dart';
-export 'package:flutter/material.dart';
+export 'package:flutter/material.dart' hide Icons;
 export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:flutter_svg/svg.dart';
 export 'package:go_router/go_router.dart';
