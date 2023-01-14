@@ -1,7 +1,4 @@
 import 'package:day_night_switcher/day_night_switcher.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:roshandroids/src/core/core.dart';
 
 /// Simple not found screen used for 404 errors (page not found on web)
@@ -60,7 +57,7 @@ class NotFoundScreen extends ConsumerWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                   onPressed: () {
-                    context.goNamed(RoutePaths.homeRoute.routeName);
+                    context.goNamed(AppRoutes.homeRoute.routeName);
                   },
                 ),
                 const Spacer(),

@@ -29,6 +29,8 @@ class Assets {
 
   static const String profileImage = 'assets/images/roshan.png';
   static const String notFountImage = 'assets/images/404.png';
+  static const String splashDarkImage = 'assets/images/app_icon_dark.png';
+  static const String splashLightImage = 'assets/images/app_icon_light.png';
 
   static const String android = 'assets/images/android.png';
   static const String iOS = 'assets/images/iOS.png';

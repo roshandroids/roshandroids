@@ -1,10 +1,6 @@
 import 'package:day_night_switcher/day_night_switcher.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:go_router/go_router.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 import 'package:roshandroids/src/core/core.dart';
+// import 'package:roshandroids/src/core/core.dart';
 
 class MenuBarSection extends ConsumerWidget {
   const MenuBarSection({super.key});
@@ -27,9 +23,7 @@ class MenuBarSection extends ConsumerWidget {
         child: Row(
           children: <Widget>[
             GestureDetector(
-              onTap: () {
-                context.goNamed(RoutePaths.homeRoute.routeName);
-              },
+              onTap: () => context.go(AppRoutes.homeRoute.path),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 5, 16, 5),
                 child: Row(
@@ -60,26 +54,17 @@ class MenuBarSection extends ConsumerWidget {
               hiddenWhen: const [Condition<bool>.smallerThan(name: TABLET)],
               child: Row(
                 children: [
-                  MenuItem(
+                  MenuBarItem(
                     title: 'Portfolio'.hardcoded,
-                    appRouteModel: AppRouteModel(
-                      routeName: 'portfolio',
-                      path: '/portfolio',
-                    ),
+                    appRouteModel: AppRoutes.portfolioRoute,
                   ),
-                  MenuItem(
+                  MenuBarItem(
                     title: 'Blogs'.hardcoded,
-                    appRouteModel: AppRouteModel(
-                      routeName: 'blogs',
-                      path: '/blogs',
-                    ),
+                    appRouteModel: AppRoutes.blogsRoute,
                   ),
-                  MenuItem(
+                  MenuBarItem(
                     title: 'Resume'.hardcoded,
-                    appRouteModel: AppRouteModel(
-                      routeName: 'resume',
-                      path: '/resume',
-                    ),
+                    appRouteModel: AppRoutes.resumeRoute,
                   ),
                 ],
               ),
@@ -111,34 +96,5 @@ class MenuBarSection extends ConsumerWidget {
         ),
       ),
     );
-  }
-}
-
-class MenuItem extends StatelessWidget {
-  const MenuItem({
-    super.key,
-    required this.title,
-    required this.appRouteModel,
-  });
-
-  final String title;
-
-  final AppRouteModel appRouteModel;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => context.go(appRouteModel.routeName),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
-        child: Text(
-          title.hardcoded,
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              ?.copyWith(fontWeight: FontWeight.w500),
-        ),
-      ),
-    ).showCursorOnHover.moveUpOnHover();
   }
 }
