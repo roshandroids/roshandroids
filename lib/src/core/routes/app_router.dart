@@ -9,7 +9,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
   final rootNavigator = GlobalKey<NavigatorState>(debugLabel: 'root');
   final shellNavigator = GlobalKey<NavigatorState>(debugLabel: 'shell');
   return GoRouter(
-    initialLocation: AppRoutes.splashRoute.path,
+    initialLocation: AppRoutes.homeRoute.path,
     navigatorKey: rootNavigator,
     routes: [
       GoRoute(

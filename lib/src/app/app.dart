@@ -30,7 +30,7 @@ class MyApp extends ConsumerWidget {
           const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
         ],
         background: ColoredBox(
-          color: themeData.getCurrentThemeData.backgroundColor,
+          color: themeData.getCurrentThemeData.colorScheme.background,
         ),
       ),
     );

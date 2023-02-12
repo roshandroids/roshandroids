@@ -6,7 +6,7 @@ class AppRoutes {
   static final AppRouteModel rootRoute =
       AppRouteModel(routeName: 'root', path: '/root');
   static final AppRouteModel homeRoute =
-      AppRouteModel(routeName: 'home', path: '/home');
+      AppRouteModel(routeName: 'home', path: '/');
   static final AppRouteModel portfolioRoute =
       AppRouteModel(routeName: 'portfolio', path: '/portfolio');
   static final AppRouteModel blogsRoute =

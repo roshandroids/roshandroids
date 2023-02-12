@@ -7,13 +7,13 @@ class IntroSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final responsiveWrapper = ResponsiveWrapper.of(context);
     return Container(
       padding: EdgeInsets.symmetric(
         vertical: 20,
-        horizontal:
-            ResponsiveWrapper.of(context).isLargerThan(TABLET) ? 10 : 30,
+        horizontal: responsiveWrapper.isLargerThan(TABLET) ? 10 : 30,
       ),
-      width: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+      width: responsiveWrapper.isSmallerThan(DESKTOP)
           ? MediaQuery.of(context).size.width
           : MediaQuery.of(context).size.width / 2.9,
       decoration: BoxDecoration(
@@ -21,7 +21,7 @@ class IntroSection extends StatelessWidget {
         color: Theme.of(context).dividerColor.withOpacity(.03),
       ),
       child: Column(
-        crossAxisAlignment: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+        crossAxisAlignment: responsiveWrapper.isSmallerThan(DESKTOP)
             ? CrossAxisAlignment.center
             : CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -34,7 +34,7 @@ class IntroSection extends StatelessWidget {
             ),
           ),
           RichText(
-            textAlign: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+            textAlign: responsiveWrapper.isSmallerThan(DESKTOP)
                 ? TextAlign.center
                 : TextAlign.justify,
             text: TextSpan(
@@ -82,7 +82,7 @@ class IntroSection extends StatelessWidget {
           Text(
             'A tech enthuiastic highly motivated guy learning technologies evolving around the world. I have developed amazing apps with appealing UI and robust performance for platforms such as Android, iOS, Web and Desktop (Both MacOS and Windows) with Flutter so far.'
                 .hardcoded,
-            textAlign: ResponsiveWrapper.of(context).isLargerThan(TABLET)
+            textAlign: responsiveWrapper.isLargerThan(TABLET)
                 ? TextAlign.justify
                 : TextAlign.center,
             style: Theme.of(context).textTheme.bodyText1,

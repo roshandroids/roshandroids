@@ -46,7 +46,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-
+    final responsiveWrapper = ResponsiveWrapper.of(context);
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: EntranceFader(
@@ -63,7 +63,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
                 20,
               ),
               columnPadding: const EdgeInsets.all(30),
-              layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+              layout: responsiveWrapper.isSmallerThan(DESKTOP)
                   ? ResponsiveRowColumnType.COLUMN
                   : ResponsiveRowColumnType.ROW,
               children: [
@@ -89,7 +89,7 @@ class _MyHomePageState extends ConsumerState<HomeScreen> {
                 30,
               ),
               columnPadding: const EdgeInsets.all(30),
-              layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+              layout: responsiveWrapper.isSmallerThan(DESKTOP)
                   ? ResponsiveRowColumnType.COLUMN
                   : ResponsiveRowColumnType.ROW,
               rowCrossAxisAlignment: CrossAxisAlignment.start,

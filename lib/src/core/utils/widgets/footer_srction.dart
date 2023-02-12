@@ -7,6 +7,8 @@ class FooterSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final responsiveWrapper = ResponsiveWrapper.of(context);
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -19,7 +21,7 @@ class FooterSection extends StatelessWidget {
           ),
         ),
         Spacer(
-          flex: ResponsiveWrapper.of(context).isLargerThan(TABLET) ? 2 : 3,
+          flex: responsiveWrapper.isLargerThan(TABLET) ? 2 : 3,
         ),
         ResponsiveVisibility(
           visible: false,
