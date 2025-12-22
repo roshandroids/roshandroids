@@ -1,63 +1,73 @@
 # 👋 Hi, I'm Roshan Shrestha
 
-### Software Engineer | Flutter & Mobile App Specialist | Firebase & REST API Expert | UI/UX Enthusiast
+🚀 Software Engineer | Flutter Specialist | Clean Architecture Advocate
+
+I’m a **software engineer from Nepal**, currently based in **Mississauga, Canada**, working remotely at **CMIC**. I build **production-ready Flutter applications** with a strong focus on **scalability, maintainability, and performance**.
 
 ---
 
-## 🌱 About Me
+## 🛠️ What I Do
 
-- 💼 Currently a **Software Engineer at CMiC**  
-- 🧠 Passionate about **Flutter**, **Firebase**, **Clean Architecture**, and **cross-platform app development**
-- 🔧 Proficient in **building scalable mobile apps**, architecting REST APIs, and integrating **CI/CD pipelines**
-- 📱 UI/UX focused with clean, intuitive design practices
-- 🚀 Always learning — diving into **React**, **backend integration**, and **cloud infrastructure**
+- 📱 Develop **cross-platform mobile apps** using **Flutter & Dart**
+- 🧩 Apply **Clean Architecture** and **SOLID principles**
+- 🔁 Use **Riverpod** for predictable and scalable state management
+- 🧪 Practice **Test-Driven Development (TDD)**
+- 🔌 Integrate complex **REST APIs**
+- 🏗️ Build modular, reusable, and enterprise-grade UI components
 
 ---
 
 ## 💼 Tech Stack
 
-```yaml
-Languages:     Dart, Java, JavaScript, HTML, CSS, Python, PL/SQL  
-Frameworks:    Flutter, React (Beginner)  
-State Mgmt:    Riverpod, Provider  
-Backend:       Firebase (Auth, Firestore, Functions, Storage), REST APIs  
-CI/CD:         GitHub Actions, Jenkins  
-Tools:         Git, JIRA, Postman, Android Studio, VS Code  
-Design:        Figma, Adobe XD (Basic)
-```
+**Primary**
+
+- Flutter • Dart • Riverpod
+- Clean Architecture • TDD
+- REST APIs • Firebase
+- Git • GitHub • JIRA
+
+**Secondary**
+
+- Java • JavaScript • Python
+- AWS • Azure
+- SQL / PL-SQL
 
 ---
 
-## 📂 Noteworthy Projects
-
-- 🔧 [flutter_riverpod_template](https://github.com/roshandroids/flutter_riverpod_template) – A scalable starter template for Flutter apps with Riverpod and clean architecture
-- 🐾 [pet_app](https://github.com/roshandroids/pet_app) – Pet adoption app with Firebase and modular state management
-- ☁️ [weather_data](https://github.com/roshandroids/weather_data) – Weather forecast app using open API with clean UI
-- 📱 [flutter-sample](https://github.com/roshandroids/flutter-sample) – Minimal working Flutter starter for quick experiments
-
-> 🔍 Check out all my repositories [here](https://github.com/roshandroids?tab=repositories)
-
----
-
-## 📈 GitHub Stats
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=roshandroids&show_icons=true&theme=radical" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=roshandroids&theme=radical&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=shrestharoshan776&show_icons=true&hide_title=true&count_private=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrestharoshan776&layout=compact" height="165" />
 </p>
 
 ---
 
-## 🤝 Connect With Me
+## 🧠 Currently Focused On
 
-- 🌐 [LinkedIn](https://www.linkedin.com/in/roshandroids)
-- 📧 [shrestharoshan776@gmail.com](mailto:shrestharoshan776@gmail.com)
-- 🧪 Portfolio (Coming soon): [roshandroids.dev](https://roshandroids.dev)
+- Advanced Flutter patterns & performance optimization
+- Scalable mobile architecture for large codebases
+- Writing clean, testable, and maintainable code
+- Improving developer experience through reusable packages
+
+---
+
+## 🌱 Beyond Coding
+
+When I’m not coding, I enjoy:
+
+- 🍳 Cooking
+- 🚴 Cycling
+- 🌍 Traveling
+- 🎧 Listening to music
 
 ---
 
-## 💬 Motto
+## 📫 Let’s Connect
 
-> _“Great code is not just written — it's **designed**, **refined**, and **reused**.”_
+- 💼 LinkedIn: https://linkedin.com/in/roshandroids
+- 📧 Email: shrestharoshan776@gmail.com
 
 ---
+
+⭐️ _I believe great apps are built with clean code, thoughtful architecture, and continuous learning._
