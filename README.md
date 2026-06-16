@@ -1,73 +1,237 @@
-# 👋 Hi, I'm Roshan Shrestha
+Hi 👋, I’m Roshan Shrestha
 
-🚀 Software Engineer | Flutter Specialist | Clean Architecture Advocate
-
-I’m a **software engineer from Nepal**, currently based in **Mississauga, Canada**, working remotely at **CMIC**. I build **production-ready Flutter applications** with a strong focus on **scalability, maintainability, and performance**.
-
----
-
-## 🛠️ What I Do
-
-- 📱 Develop **cross-platform mobile apps** using **Flutter & Dart**
-- 🧩 Apply **Clean Architecture** and **SOLID principles**
-- 🔁 Use **Riverpod** for predictable and scalable state management
-- 🧪 Practice **Test-Driven Development (TDD)**
-- 🔌 Integrate complex **REST APIs**
-- 🏗️ Build modular, reusable, and enterprise-grade UI components
-
----
-
-## 💼 Tech Stack
-
-**Primary**
-
-- Flutter • Dart • Riverpod
-- Clean Architecture • TDD
-- REST APIs • Firebase
-- Git • GitHub • JIRA
-
-**Secondary**
-
-- Java • JavaScript • Python
-- AWS • Azure
-- SQL / PL-SQL
-
----
-
-## 📊 GitHub Stats
-
+<h3 align="center">Senior Software Engineer • Flutter Specialist • Mobile Architecture Enthusiast</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shrestharoshan776&show_icons=true&hide_title=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrestharoshan776&layout=compact" height="165" />
+Building scalable, maintainable, and high-performance mobile applications with Flutter.
+</p>
+<p align="center">
+  <a href="https://github.com/shrestharoshan776">
+    <img src="https://komarev.com/ghpvc/?username=shrestharoshan776&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+  </a>
 </p>
 
----
+⸻
 
-## 🧠 Currently Focused On
+🚀 About Me
 
-- Advanced Flutter patterns & performance optimization
-- Scalable mobile architecture for large codebases
-- Writing clean, testable, and maintainable code
-- Improving developer experience through reusable packages
+I’m a Software Engineer from Nepal 🇳🇵 currently based in Mississauga, Ontario, Canada 🇨🇦.
 
----
+I specialize in designing and developing enterprise-grade Flutter applications with a strong emphasis on:
 
-## 🌱 Beyond Coding
+* Clean Architecture
+* SOLID Principles
+* Test-Driven Development (TDD)
+* Scalable Application Design
+* Performance Optimization
+* Reusable UI Systems
+* Developer Experience
 
-When I’m not coding, I enjoy:
+Currently working remotely at CMIC, contributing to enterprise software solutions used across the construction industry.
 
-- 🍳 Cooking
-- 🚴 Cycling
-- 🌍 Traveling
-- 🎧 Listening to music
+I enjoy solving complex engineering challenges and transforming business requirements into scalable mobile experiences.
 
----
+⸻
 
-## 📫 Let’s Connect
+💼 Professional Snapshot
 
-- 💼 LinkedIn: https://linkedin.com/in/roshandroids
-- 📧 Email: shrestharoshan776@gmail.com
+name: Roshan Shrestha
+role: Software Engineer
+specialization: Flutter Development
+location: Mississauga, Ontario, Canada
+origin: Nepal
+current_company: CMIC
+expertise:
+  - Flutter
+  - Dart
+  - Mobile Architecture
+  - Clean Architecture
+  - Riverpod
+  - REST APIs
+  - TDD
+  - Firebase
+interests:
+  - Software Design
+  - Performance Optimization
+  - Mobile Architecture
+  - Developer Productivity
+  - Open Source
+hobbies:
+  - Cycling
+  - Cooking
+  - Traveling
+  - Music
 
----
+⸻
 
-⭐️ _I believe great apps are built with clean code, thoughtful architecture, and continuous learning._
+🛠 Tech Stack
+
+Mobile Development
+
+<p>
+<img src="https://skillicons.dev/icons?i=flutter,dart,firebase" />
+</p>
+
+Programming Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=java,js,python" />
+</p>
+
+Cloud & Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=aws,azure,firebase" />
+</p>
+
+Development Tools
+
+<p>
+<img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+Architecture & Engineering Practices
+
+* Clean Architecture
+* SOLID Principles
+* MVVM
+* Repository Pattern
+* Dependency Injection
+* Feature-Driven Architecture
+* Modular Architecture
+* Test-Driven Development
+* CI/CD Workflows
+
+⸻
+
+🎯 Current Focus
+
+* Advanced Flutter Architecture
+* Enterprise Mobile Development
+* Performance Optimization
+* Scalable State Management
+* Flutter Testing Strategies
+* Package Development
+* Mobile CI/CD Automation
+
+⸻
+
+📈 GitHub Analytics
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=shrestharoshan776&show_icons=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrestharoshan776&layout=compact" />
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shrestharoshan776" />
+</p>
+
+⸻
+
+🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=shrestharoshan776&theme=algolia&margin-w=15" />
+</p>
+
+⸻
+
+🌟 Featured Expertise
+
+📱 Flutter Development
+
+* Cross-platform mobile applications
+* Custom UI systems
+* Animations
+* Responsive layouts
+* Platform integrations
+* Performance tuning
+
+🏗 Software Architecture
+
+* Clean Architecture
+* Scalable codebases
+* Modular applications
+* Domain-driven design concepts
+* Long-term maintainability
+
+🧪 Testing
+
+* Unit Testing
+* Widget Testing
+* Integration Testing
+* TDD workflows
+
+🔌 API Integration
+
+* REST APIs
+* Authentication
+* Pagination
+* File Uploads
+* Offline-first approaches
+
+⸻
+
+📚 Learning Journey
+
+Currently exploring:
+
+* Flutter Internals
+* Advanced Riverpod Patterns
+* Mobile Security
+* System Design
+* Scalable Backend Architectures
+* Cloud-Native Applications
+* AI-assisted Developer Workflows
+
+⸻
+
+🌍 Beyond Engineering
+
+When I’m not coding:
+
+🚴 Cycling
+
+🍳 Cooking
+
+🌎 Traveling
+
+🎧 Listening to Music
+
+📖 Reading about technology and software architecture
+
+⸻
+
+💡 Engineering Philosophy
+
+Clean code scales.
+
+Architecture matters.
+
+Maintainability beats shortcuts.
+
+Continuous learning compounds over time.
+
+⸻
+
+🤝 Open to Collaborate On
+
+* Flutter Applications
+* Mobile Architecture
+* Open Source Packages
+* Developer Tools
+* Performance Optimization Projects
+
+⸻
+
+📫 Connect With Me
+
+<p>
+<a href="https://linkedin.com/in/roshandroids">LinkedIn</a> •
+<a href="mailto:shrestharoshan776@gmail.com">Email</a>
+</p>
+
+⸻
+
+<p align="center">
+⭐ Building scalable mobile experiences through thoughtful architecture, clean code, and continuous learning.
+</p>
