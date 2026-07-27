@@ -1,10 +1,142 @@
 <div align="center">
 
-# Roshan Shrestha
+# 👋 Hi, I'm Roshan Shrestha
 
-**Software Engineer · Flutter Architect · Open Source Builder**
+### Software Engineer • Flutter Architect • Open Source Builder
 
-I build software ecosystems, not just apps — the products, the packages behind them, and the tooling that keeps everything maintainable.
+> **Building software ecosystems—not just apps.**
+> I design products, reusable packages, and developer tools that make software easier to build, scale, and maintain.
+
+<p>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://roshanshrestha.rsprojects.dev/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/roshandroids)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roshandroids)
+
+</p>
+
+</div>
+
+---
+
+# 🚀 What I Build
+
+Most software starts as an application.
+
+I usually end up building **three things instead**:
+
+- 📱 The product users interact with
+- 📦 The reusable packages behind it
+- 🛠️ The tooling that makes future development faster
+
+Working on enterprise software at **CMiC** reinforced an important lesson: software succeeds because it's maintainable—not because it shipped one more feature.
+
+That philosophy shapes every project I build. I enjoy creating systems with clean architecture, reusable components, automated quality checks, and excellent developer experience.
+
+---
+
+# 🌐 Open Source Ecosystem
+
+My projects are intentionally connected. Each one solves a problem discovered while building another.
+
+```mermaid
+flowchart TD
+    A["Enterprise Experience (CMiC)"]
+    B["📄 Document Platform"]
+    C["🌍 Localization Analyzer"]
+    D["🤖 AI Tray"]
+    E["🎓 CELPIP Workspace"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+Building enterprise document software exposed localization challenges.
+
+Maintaining reusable packages inspired better tooling.
+
+Managing multiple AI workflows led to AI Tray.
+
+The same engineering principles now power CELPIP Workspace.
+
+Rather than unrelated repositories, these projects represent a growing ecosystem focused on building better software.
+
+---
+
+# ⭐ Featured Projects
+
+| Project                      | Purpose                                                                                                                                           | Technologies                                    |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| 🤖 **AI Tray**               | Cross-platform desktop application for monitoring and managing AI CLI usage directly from the system tray while improving developer productivity. | Flutter • Desktop • Native Integration          |
+| 📄 **Document Platform**     | Modular Flutter ecosystem for enterprise document management built around reusable packages and clean architecture.                               | Flutter • Clean Architecture • Modular Packages |
+| 🌍 **Localization Analyzer** | Complete localization toolkit including analyzer rules, custom lints, CLI utilities, DevTools integration, and CI validation.                     | Dart Analyzer • CLI • DevTools • CI             |
+| 🎓 **CELPIP Workspace**      | Cross-platform learning workspace designed to help learners prepare efficiently for the CELPIP examination.                                       | Flutter • Cross-platform • Riverpod             |
+
+---
+
+# 🛠 Tech Stack
+
+| Area                  | Technologies                                                  |
+| --------------------- | ------------------------------------------------------------- |
+| **Languages**         | Dart • Java • JavaScript • Python • C++ • C# • Kotlin • Swift |
+| **Cross-Platform**    | Flutter (Android • iOS • Web • Windows • macOS)               |
+| **State Management**  | Riverpod • Bloc • Provider • GetX                             |
+| **Backend & Storage** | Firebase • Supabase • REST APIs • Hive • Isar • Sqflite       |
+| **Developer Tooling** | Custom Analyzer Rules • CLI Utilities • DevTools Extensions   |
+| **Testing**           | Unit Testing • Widget Testing • Golden Testing                |
+| **CI/CD**             | GitHub Actions • Codemagic • Jenkins                          |
+| **Design**            | Material 3 • Cupertino • Figma                                |
+
+---
+
+# 💡 Engineering Principles
+
+Software should be easy to understand, easy to test, and easy to evolve.
+
+I believe architecture is less about abstraction and more about helping future developers confidently make changes. Every package, test, documentation page, and CI workflow is an investment in long-term maintainability.
+
+My priorities are:
+
+- Build reusable systems over one-off solutions
+- Automate repetitive work
+- Keep codebases modular and scalable
+- Document important decisions
+- Catch problems early through testing and CI
+- Improve developer experience wherever possible
+
+---
+
+# 🎯 Current Focus
+
+Currently exploring and building:
+
+- 📦 Production-ready Flutter packages
+- 🛠 Developer productivity tools
+- 🖥 Desktop applications
+- 🌐 Flutter Web experiences
+- 🤖 AI-assisted development workflows
+- 🏗 Enterprise application architecture
+- 📚 Documentation-first engineering
+
+---
+
+# ❤️ Beyond Code
+
+Outside of work and open source, I enjoy:
+
+- 🚴 Cycling
+- 🍳 Cooking
+- 🌍 Traveling
+- 🎧 Music
+- 📖 Reading about software architecture and system design
+
+---
+
+# 🤝 Let's Connect
+
+<div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://roshanshrestha.rsprojects.dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/roshandroids)
@@ -12,137 +144,16 @@ I build software ecosystems, not just apps — the products, the packages behind
 
 </div>
 
-<br>
-
-## What I Build
-
-Most of my work starts the same way: an application needs to exist, and I end up building three things instead of one — the application, the package that makes part of it reusable, and the tool that makes the next version faster to ship.
-
-That's not scope creep. It's how I think. A production app at **CMiC** taught me that enterprise software lives or dies on maintainability, not features. My own projects are where I get to apply that same standard without compromise — clean boundaries, documented decisions, and CI that catches problems before a reviewer has to.
-
-If you're looking for the short version: I care more about *how* software is built than about shipping one more screen.
-
-<br>
-
-## The Ecosystem
-
-My open-source work isn't a pile of unrelated repos — each project exists to solve a problem the others surfaced.
-
-```
-Enterprise Application (CMiC)
-        │
-        ▼
-Document Platform  ──────►  reusable document-management packages
-        │
-        ▼
-Localization Analyzer  ───►  tooling born from maintaining those packages
-        │
-        ▼
-AI Tray  ─────────────────►  developer tooling for my own daily workflow
-        │
-        ▼
-CELPIP Workspace  ─────────►  applying the same architecture to a learning product
-```
-
-Building a document platform surfaced localization gaps → I built an analyzer to catch them. Maintaining multiple projects across AI tools surfaced workflow friction → I built a tray app to fix it. Same instinct, different problem, every time.
-
-<br>
-
-## Featured Projects
-
-<table>
-<tr>
-<th align="left">Project</th>
-<th align="left">Purpose</th>
-<th align="left">Stack</th>
-</tr>
-
-<tr>
-<td valign="top">
-<strong>🤖 AI Tray</strong>
-</td>
-<td valign="top">
-A cross-platform desktop app for monitoring and managing AI CLI usage from the system tray. Built because switching between multiple AI tools daily meant losing visibility into usage — this puts it back in view without breaking flow.
-</td>
-<td valign="top">
-Flutter · Desktop (macOS/Windows) · Native tray integration
-</td>
-</tr>
-
-<tr>
-<td valign="top">
-<strong>📄 Document Platform</strong>
-</td>
-<td valign="top">
-A modular ecosystem for enterprise document management, composed of reusable packages rather than one monolithic app. Exists so document-heavy Flutter apps can scale in features without accumulating architectural debt.
-</td>
-<td valign="top">
-Flutter · Clean Architecture · Modular packages
-</td>
-</tr>
-
-<tr>
-<td valign="top">
-<strong>🌍 Localization Analyzer</strong>
-</td>
-<td valign="top">
-A localization toolkit — analyzer rules, custom lints, CLI utilities, DevTools integration, and CI checks — built to catch missing or broken translations before they reach production, not after a user reports them.
-</td>
-<td valign="top">
-Dart analyzer plugin · Custom lints · CI tooling
-</td>
-</tr>
-
-<tr>
-<td valign="top">
-<strong>🎓 CELPIP Workspace</strong>
-</td>
-<td valign="top">
-A structured, cross-platform workspace for CELPIP exam preparation, with practice workflows and progress tracking designed around how people actually study for a high-stakes test.
-</td>
-<td valign="top">
-Flutter · Cross-platform · State management
-</td>
-</tr>
-</table>
-
-<sub>Repository links available on request — reach out via any channel below.</sub>
-
-<br>
-
-## Engineering Philosophy
-
-> I think of architecture as a conversation with people who haven't joined the project yet. Every boundary I draw, every package I extract, and every test I write is really a way of saying "here's what this piece is responsible for, and here's how you'll know if it breaks." Maintainability isn't a phase that happens after the "real" work — it's the real work. A feature that ships without a test isn't done, and a package without documentation isn't reusable, it's just private code that happens to be public. I'd rather spend an extra hour on a clean abstraction than save that hour and pay it back tenfold the next time the code needs to change — and in software that grows past a single team, that next time always comes. The same logic extends to developer experience: tooling, CI checks, and linting rules aren't nice-to-haves, they're how a team's standards survive contact with deadlines.
-
-<br>
-
-## Tech Stack — Grouped by What It's For
-
-<table>
-<tr><td width="140" valign="top"><strong>Languages</strong></td><td>Dart · Java · JavaScript · C++ · C# · Swift · Kotlin · Python</td></tr>
-<tr><td valign="top"><strong>Cross-Platform</strong></td><td>Flutter (Mobile · Web · Desktop) · Android · iOS · macOS · Windows</td></tr>
-<tr><td valign="top"><strong>State Management</strong></td><td>Riverpod · Bloc · Provider · GetX</td></tr>
-<tr><td valign="top"><strong>Backend & Data</strong></td><td>Firebase · Supabase · REST APIs · Hive/Isar · Sqflite</td></tr>
-<tr><td valign="top"><strong>Tooling & DX</strong></td><td>Custom Dart analyzer rules & lints · CLI utilities · DevTools extensions</td></tr>
-<tr><td valign="top"><strong>Testing</strong></td><td>Unit Testing · Golden Testing</td></tr>
-<tr><td valign="top"><strong>CI/CD</strong></td><td>GitHub Actions · Codemagic · Jenkins</td></tr>
-<tr><td valign="top"><strong>Design</strong></td><td>Material 3 · Cupertino · Figma</td></tr>
-</table>
-
-<br>
-
-## Now
-
-Building and maintaining **AI Tray**, **Document Platform**, **Localization Analyzer**, and **CELPIP Workspace**, while working full-time on enterprise HCM software at **CMiC** — Flutter, Dart, `go_router`, and Riverpod at production scale.
-
-<br>
-
-## Connect
+---
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://roshanshrestha.rsprojects.dev/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/roshandroids)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roshandroids)
+### Thanks for stopping by! 👋
+
+I enjoy turning ideas into polished software—whether that's an enterprise application, an open-source package, or a developer tool.
+
+**My goal is simple:** build software that is scalable, maintainable, and genuinely useful to both users and developers.
+
+⭐ If you find one of my projects helpful, consider giving it a star.
 
 </div>
