@@ -1,11 +1,10 @@
 <div align="center">
 
-# 👋 Hi, I'm Roshan Shrestha
+# Hi, I'm Roshan Shrestha 👋
 
-### Software Engineer • Flutter Architect • Open Source Builder
+### Cross-Platform Software Engineer · Flutter Architecture · Developer Tooling & DX
 
-> **Building software ecosystems—not just apps.**
-> I design products, reusable packages, and developer tools that make software easier to build, scale, and maintain.
+**Building software ecosystems — not just apps.**
 
 <p>
 
@@ -13,147 +12,186 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/roshandroids)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roshandroids)
 
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Riverpod](https://img.shields.io/badge/Riverpod-40C4FF?style=flat-square&logo=flutter&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+
 </p>
 
 </div>
 
 ---
 
-# 🚀 What I Build
+## 🚀 What I Build
 
-Most software starts as an application.
+Most software starts as an application. I usually end up building **three things instead**:
 
-I usually end up building **three things instead**:
+📱 the product people use · 📦 the reusable packages behind it · 🛠️ the tooling that makes the next feature faster
 
-- 📱 The product users interact with
-- 📦 The reusable packages behind it
-- 🛠️ The tooling that makes future development faster
-
-Working on enterprise software at **CMiC** reinforced an important lesson: software succeeds because it's maintainable—not because it shipped one more feature.
-
-That philosophy shapes every project I build. I enjoy creating systems with clean architecture, reusable components, automated quality checks, and excellent developer experience.
+Shipping enterprise HR software at **CMiC** reinforced a simple lesson: software succeeds because it's maintainable — not because it shipped one more feature. That philosophy shapes everything below: clean architecture, reusable components, automated quality gates, and developer experience treated as a product surface, not an afterthought.
 
 ---
 
-# 🌐 Open Source Ecosystem
+## 🌐 My Engineering Flywheel
 
-My projects are intentionally connected. Each one solves a problem discovered while building another.
+Each project exists because a real problem surfaced while building the one before it — this isn't a portfolio of unrelated repos, it's a compounding system.
 
 ```mermaid
-flowchart TD
-    A["Enterprise Experience (CMiC)"]
-    B["📄 Document Platform"]
-    C["🌍 Localization Analyzer"]
-    D["🤖 AI Tray"]
-    E["🎓 CELPIP Workspace"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
+flowchart LR
+    A["Enterprise Flutter\n(CMiC)"] --> B["Shared UI Packages\n(hcm_ui)"]
+    B --> C["Document Platform"]
+    C --> D["Localization Analyzer\n(MBO)"]
+    D --> E["Developer Tooling\n(platform-ci)"]
+    E --> F["AI-Assisted Engineering\n(AI Tray · agents)"]
+    F --> A
 ```
 
-Building enterprise document software exposed localization challenges.
-
-Maintaining reusable packages inspired better tooling.
-
-Managing multiple AI workflows led to AI Tray.
-
-The same engineering principles now power CELPIP Workspace.
-
-Rather than unrelated repositories, these projects represent a growing ecosystem focused on building better software.
+Building enterprise document software exposed localization gaps → maintaining shared packages demanded better tooling → managing AI-assisted workflows led to AI Tray and agentic templates → those same principles now power everything I ship next.
 
 ---
 
-# ⭐ Featured Projects
+## ⭐ Featured Projects
 
-| Project                      | Purpose                                                                                                                                           | Technologies                                    |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| 🤖 **AI Tray**               | Cross-platform desktop application for monitoring and managing AI CLI usage directly from the system tray while improving developer productivity. | Flutter • Desktop • Native Integration          |
-| 📄 **Document Platform**     | Modular Flutter ecosystem for enterprise document management built around reusable packages and clean architecture.                               | Flutter • Clean Architecture • Modular Packages |
-| 🌍 **Localization Analyzer** | Complete localization toolkit including analyzer rules, custom lints, CLI utilities, DevTools integration, and CI validation.                     | Dart Analyzer • CLI • DevTools • CI             |
-| 🎓 **CELPIP Workspace**      | Cross-platform learning workspace designed to help learners prepare efficiently for the CELPIP examination.                                       | Flutter • Cross-platform • Riverpod             |
-
----
-
-# 🛠 Tech Stack
-
-| Area                  | Technologies                                                  |
-| --------------------- | ------------------------------------------------------------- |
-| **Languages**         | Dart • Java • JavaScript • Python • C++ • C# • Kotlin • Swift |
-| **Cross-Platform**    | Flutter (Android • iOS • Web • Windows • macOS)               |
-| **State Management**  | Riverpod • Bloc • Provider • GetX                             |
-| **Backend & Storage** | Firebase • Supabase • REST APIs • Hive • Isar • Sqflite       |
-| **Developer Tooling** | Custom Analyzer Rules • CLI Utilities • DevTools Extensions   |
-| **Testing**           | Unit Testing • Widget Testing • Golden Testing                |
-| **CI/CD**             | GitHub Actions • Codemagic • Jenkins                          |
-| **Design**            | Material 3 • Cupertino • Figma                                |
+| Project | Purpose | Stack |
+|---|---|---|
+| [**Document Platform**](https://github.com/roshandroids/Document_Platform) | Modular Flutter document-editing monorepo — schema, transactions, codecs, embeddable packages | Flutter · Clean Architecture · Modular Packages |
+| [**AI Tray**](https://github.com/roshandroids/AI_Tray) | Cross-platform desktop companion for monitoring & managing AI CLI sessions from the system tray | Flutter Desktop · CLI Integration · Riverpod |
+| [**MBO — Localization Analyzer**](https://github.com/roshandroids/MBO) | Full localization diagnostics toolkit — analyzer rules, custom lints, CLI, DevTools integration, CI validation | Dart Analyzer · Custom Lint · CLI · DevTools |
+| [**platform-ci**](https://github.com/roshandroids/platform-ci) | Reusable, config-driven GitHub Actions for Flutter/Dart projects | GitHub Actions · CI/CD · Automation |
+| [**agentic_flutter_template**](https://github.com/roshandroids/agentic_flutter_template) | AI-first Flutter monorepo template — architecture, CI, and agent workflows baked in | Flutter · Claude Code · Agent Architecture |
+| **CELPIP Workspace** | Cross-platform exam-prep workspace built around structured practice and progress tracking | Flutter · Riverpod · go_router · Supabase |
 
 ---
 
-# 💡 Engineering Principles
+## 🛠 Tech Stack
 
-Software should be easy to understand, easy to test, and easy to evolve.
+<table>
+<tr>
+<td valign="top" width="33%">
 
-I believe architecture is less about abstraction and more about helping future developers confidently make changes. Every package, test, documentation page, and CI workflow is an investment in long-term maintainability.
+### 🟢 Core
+- Dart · Flutter
+- Riverpod
+- Feature-first architecture
+- REST / Dio integration
+- Git · Conventional Commits · Jira
 
-My priorities are:
+</td>
+<td valign="top" width="33%">
 
-- Build reusable systems over one-off solutions
-- Automate repetitive work
-- Keep codebases modular and scalable
-- Document important decisions
-- Catch problems early through testing and CI
-- Improve developer experience wherever possible
+### 🔵 Strong
+- GitHub Actions · **platform-ci**
+- Melos workspaces · FVM
+- Flutter Desktop (tray/window)
+- Localization engineering
+- Unit · Widget · Golden testing
+- Firebase / Supabase · Hosting
+
+</td>
+<td valign="top" width="33%">
+
+### 🟡 Building Toward
+- Go backend engineering
+- PostgreSQL · Docker
+- Distributed systems & Redis
+- Swift / SwiftUI
+- Cloud infrastructure
+
+</td>
+</tr>
+</table>
+
+**Also in the toolbox:** Bloc/Provider/GetX · TypeScript · React · Vite · Tailwind · Hive/Isar/Sqflite · Codemagic/Jenkins · Figma
 
 ---
 
-# 🎯 Current Focus
+## 🎯 What I Specialize In
 
-Currently exploring and building:
-
-- 📦 Production-ready Flutter packages
-- 🛠 Developer productivity tools
-- 🖥 Desktop applications
-- 🌐 Flutter Web experiences
-- 🤖 AI-assisted development workflows
-- 🏗 Enterprise application architecture
-- 📚 Documentation-first engineering
-
----
-
-# ❤️ Beyond Code
-
-Outside of work and open source, I enjoy:
-
-- 🚴 Cycling
-- 🍳 Cooking
-- 🌍 Traveling
-- 🎧 Music
-- 📖 Reading about software architecture and system design
+| Capability | Signal |
+|---|---|
+| **Enterprise Flutter delivery** | Production HCM/ATS features — requisitions, applicant tracking, HR documents, deep linking — shipped against real Jira-tracked stories |
+| **Existing-codebase investigation** | Tracing features across routing, auth, and data-loading layers of a live production app into accurate, ship-ready feasibility plans |
+| **Shared UI & package extraction** | Reusable Flutter component packages (`hcm_ui`) — fields, LOVs, dropzones, document chrome — reused across multiple products |
+| **Localization systems** | End-to-end tooling: ARB/l10n at scale, static analysis, custom lints, CI validation — not just string replacement |
+| **Developer platform engineering** | Config-driven, reusable CI (`platform-ci`), Melos monorepos, and a multi-agent Claude Code architecture deployed across a dozen repos |
+| **AI-assisted engineering** | Agents as part of the delivery loop, not a shortcut — capability-bound tooling that refuses to assume unverified integrations |
 
 ---
 
-# 🤝 Let's Connect
+## 💡 Engineering Principles
+
+```
+Build for maintainability
+        ↓
+Prefer reusable systems over one-off solutions
+        ↓
+Keep architecture explicit
+        ↓
+Automate repetitive engineering work
+        ↓
+Test what matters
+        ↓
+Document decisions, not just implementation
+        ↓
+Treat developer experience as part of product quality
+```
+
+---
+
+## 🔁 How I Work
+
+```mermaid
+flowchart LR
+  A[Feature delivery] --> B[Extract shared systems]
+  B --> C[Automate with CI / tooling]
+  C --> D[Encode in agent workflows]
+  D --> A
+```
+
+---
+
+## 🧭 Identity
+
+**Primary** — Cross-Platform Software Engineer: Flutter · shared UI systems · developer tooling
+
+<details>
+<summary><b>Alternative framings</b></summary>
+<br>
+
+- Enterprise Flutter Engineer — HCM, Applicant Tracking, HR Documents
+- Flutter Platform & DX Engineer — packages, localization tooling, CI
+- Product-minded Flutter Engineer — desktop companions & document platforms
+- Cross-platform Engineer in transition toward backend & systems ownership (Go, PostgreSQL)
+
+</details>
+
+---
+
+## 📈 Trajectory
+
+Expanding from strong Flutter client/platform work into **backend engineering (Go, PostgreSQL, Docker)** and deeper **systems ownership** — not abandoning Flutter, but building the ability to own a product end-to-end: client, backend, infrastructure, tooling, and delivery.
+
+---
+
+## ❤️ Beyond Code
+
+🚴 Cycling · 🍳 Cooking · 🌍 Traveling · 🎧 Music · 📖 Reading about architecture & systems design
+
+---
 
 <div align="center">
+
+### Let's Connect
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://roshanshrestha.rsprojects.dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/roshandroids)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/roshandroids)
 
-</div>
+⭐ If one of these projects helps you, a star goes a long way.
 
----
-
-<div align="center">
-
-### Thanks for stopping by! 👋
-
-I enjoy turning ideas into polished software—whether that's an enterprise application, an open-source package, or a developer tool.
-
-**My goal is simple:** build software that is scalable, maintainable, and genuinely useful to both users and developers.
-
-⭐ If you find one of my projects helpful, consider giving it a star.
+<sub>Evidence-based profile · synthesized from ongoing engineering work · updated 2026-08</sub>
 
 </div>
