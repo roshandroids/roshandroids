@@ -301,12 +301,12 @@ Terminal-first hero, GitHub metrics synced daily as static JSON, a command palet
 | **AI-assisted engineering** | Agents as part of the delivery loop, not a shortcut — capability-bound tooling that refuses to assume unverified integrations, plus persistent agent memory (`brain.md`) |
 | **Native & desktop apps** | Flutter Desktop (AI Tray) and native SwiftUI (MacOrganizer) utilities that respect platform conventions |
 
-### How the agent system works
+### My Claude + Jira workflow
 
-One roster, one shared skill set, reused by every repo. The coordinator only routes; specialists do the work; review can bounce work back.
+A workflow I run with Claude and Jira. The coordinator reads the ticket and only routes; specialist agents do the work; review can bounce it back; every agent reads one shared skill set.
 
 <div align="center">
-<img src="assets/agent-lifecycle.svg" alt="A coordinator routes a ticket through investigate, implement, review and open-PR agents, with a review-to-implement feedback loop and a shared skill set" width="100%">
+<img src="assets/agent-lifecycle.svg" alt="A coordinator routes a Jira ticket through investigate, implement, review and open-PR agents, with a review-to-implement feedback loop and a shared skill set" width="100%">
 </div>
 
 Agent sessions forget; `brain.md` is the fix. Decisions go through a small CLI into Markdown in the repo, so the next session, even from a different agent, resumes with context.
