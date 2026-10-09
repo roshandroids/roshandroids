@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="brain.md: one agent session writes decisions through the brain CLI into Markdown files in the repo; a later session, possibly a different agent, reads BRAIN.md and the same files instead of starting from zero.">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="900" height="300" rx="14" fill="#0f172a"/>
+  <g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" text-anchor="middle">
+    <rect x="30" y="40" width="170" height="70" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="115" y="68" font-size="13" font-weight="700" fill="#f1f5f9">Session 1</text>
+    <text x="115" y="88" font-size="11" fill="#94a3b8">e.g. Claude Code</text>
+    <rect x="30" y="190" width="170" height="70" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="115" y="218" font-size="13" font-weight="700" fill="#f1f5f9">Session 2</text>
+    <text x="115" y="238" font-size="11" fill="#94a3b8">any other agent or model</text>
+    <rect x="320" y="115" width="130" height="70" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="385" y="143" font-size="13" font-weight="700" fill="#f1f5f9">brain CLI</text>
+    <text x="385" y="163" font-size="11" fill="#94a3b8">zero dependencies</text>
+    <rect x="590" y="100" width="280" height="100" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="730" y="128" font-size="13" font-weight="700" fill="#f1f5f9">your repo</text>
+    <text x="730" y="150" font-size="11" fill="#94a3b8">BRAIN.md  (the protocol agents read)</text>
+    <text x="730" y="168" font-size="11" fill="#94a3b8">brain/  (decisions, constraints, pages)</text>
+    <text x="730" y="186" font-size="11" fill="#64748b">plain Markdown, versioned with git</text>
+    <g stroke="#94a3b8" stroke-width="1.6" fill="none" marker-end="url(#a)">
+      <polyline points="200,75 260,75 260,135 318,135"/>
+      <line x1="450" y1="150" x2="588" y2="150"/>
+      <polyline points="588,175 520,175 520,225 202,225"/>
+    </g>
+    <g font-size="11" fill="#cbd5e1">
+      <text x="266" y="68" text-anchor="start">writes decision</text>
+      <text x="519" y="142">persists</text>
+      <text x="360" y="218">reads BRAIN.md, resumes with context</text>
+    </g>
+  </g>
+</svg>

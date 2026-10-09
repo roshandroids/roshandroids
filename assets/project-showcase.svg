@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Project showcase: each product repo is the source of truth; an integration definition is validated and compiled into a registry that the Flutter Web showcase renders, while platform-ci publishes private playgrounds into it.">
+  <defs><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker><marker id="mg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#34d399"/></marker><marker id="mo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#fbbf24"/></marker></defs>
+  <rect width="900" height="330" rx="14" fill="#0f172a"/>
+  <g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect x="30" y="90" width="140" height="90" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="100.0" y="115" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Product repo</text>
+  <text x="100.0" y="133" font-size="11" fill="#94a3b8" text-anchor="middle">showcase/, docs/,</text>
+  <text x="100.0" y="149" font-size="11" fill="#94a3b8" text-anchor="middle">examples/ (source</text>
+  <text x="100.0" y="165" font-size="11" fill="#94a3b8" text-anchor="middle">of truth)</text>
+  <rect x="240" y="90" width="140" height="90" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="310.0" y="123" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Integration</text>
+  <text x="310.0" y="141" font-size="11" fill="#94a3b8" text-anchor="middle">content/integrations/</text>
+  <text x="310.0" y="157" font-size="11" fill="#94a3b8" text-anchor="middle">&lt;id&gt;.json</text>
+  <rect x="450" y="90" width="140" height="90" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="520.0" y="123" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Validate + build</text>
+  <text x="520.0" y="141" font-size="11" fill="#94a3b8" text-anchor="middle">validate_content</text>
+  <text x="520.0" y="157" font-size="11" fill="#94a3b8" text-anchor="middle">generate_registry</text>
+  <rect x="660" y="90" width="210" height="90" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="765.0" y="123" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">RSProjects Showcase</text>
+  <text x="765.0" y="141" font-size="11" fill="#94a3b8" text-anchor="middle">Flutter Web, catalog,</text>
+  <text x="765.0" y="157" font-size="11" fill="#94a3b8" text-anchor="middle">ProjectShowcaseTemplate</text>
+  <polyline points="170,135 238,135" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="204" y="127" font-size="11" fill="#cbd5e1" text-anchor="middle">describes</text>
+  <polyline points="380,135 448,135" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="414" y="127" font-size="11" fill="#cbd5e1" text-anchor="middle">checks</text>
+  <polyline points="590,135 658,135" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="624" y="127" font-size="11" fill="#cbd5e1" text-anchor="middle">registry</text>
+  <rect x="450" y="246" width="420" height="52" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="660.0" y="268" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">platform-ci: deploy-showcase</text>
+  <text x="660.0" y="286" font-size="11" fill="#94a3b8" text-anchor="middle">publishes private playgrounds to generated/&lt;id&gt;/</text>
+  <polyline points="765,246 765,182" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#mo)"/>
+  <text x="775" y="218" font-size="11" fill="#fbbf24" text-anchor="start">playgrounds</text>
+  <polyline points="100,180 100,272 448,272" fill="none" stroke="#fbbf24" stroke-width="1.6" marker-end="url(#mo)"/>
+  <text x="260" y="264" font-size="11" fill="#fbbf24" text-anchor="middle">deploy.showcase</text>
+  </g>
+</svg>

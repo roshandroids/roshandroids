@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-label="One pure-Dart analysis engine reads Dart sources and ARB files and feeds three consumers: a CLI and CI gate, a localhost server behind a DevTools console, and a planned lint rule.">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker>
+  </defs>
+  <rect width="900" height="340" rx="14" fill="#0f172a"/>
+  <g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" text-anchor="middle">
+    <!-- inputs -->
+    <rect x="30" y="70" width="170" height="60" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="115" y="97" font-size="13" font-weight="700" fill="#f1f5f9">Dart UI code</text>
+    <text x="115" y="115" font-size="11" fill="#94a3b8">Text('Buy now')</text>
+    <rect x="30" y="190" width="170" height="60" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="115" y="217" font-size="13" font-weight="700" fill="#f1f5f9">ARB files</text>
+    <text x="115" y="235" font-size="11" fill="#94a3b8">app_en · app_fr</text>
+    <!-- engine -->
+    <rect x="290" y="80" width="230" height="170" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.6"/>
+    <text x="405" y="106" font-size="14" font-weight="700" fill="#f1f5f9">localization_analyzer</text>
+    <text x="405" y="124" font-size="11" fill="#94a3b8">pure Dart, no Flutter dependency</text>
+    <g font-size="11" fill="#cbd5e1">
+      <text x="405" y="152">hardcoded strings</text>
+      <text x="405" y="170">duplicate · missing · plural keys</text>
+      <text x="405" y="188">placeholder mismatches</text>
+      <text x="405" y="206">cache + autofix</text>
+    </g>
+    <text x="405" y="234" font-size="11" font-weight="700" fill="#fbbf24">baseline: old debt allowed, new debt fails</text>
+    <!-- consumers -->
+    <rect x="640" y="40" width="230" height="64" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="755" y="66" font-size="13" font-weight="700" fill="#f1f5f9">localization_cli</text>
+    <text x="755" y="85" font-size="11" fill="#94a3b8">local scan · CI gate on exit code</text>
+    <rect x="640" y="136" width="230" height="64" rx="10" fill="#1e293b" stroke="#475569"/>
+    <text x="755" y="162" font-size="13" font-weight="700" fill="#f1f5f9">localization_server</text>
+    <text x="755" y="181" font-size="11" fill="#94a3b8">localhost HTTP · DevTools console</text>
+    <rect x="640" y="232" width="230" height="64" rx="10" fill="none" stroke="#475569" stroke-dasharray="5 4"/>
+    <text x="755" y="258" font-size="13" font-weight="700" fill="#f1f5f9">lint rule</text>
+    <text x="755" y="277" font-size="11" fill="#94a3b8">hardcoded_text · later phase</text>
+    <!-- arrows -->
+    <g stroke="#94a3b8" stroke-width="1.6" fill="none" marker-end="url(#a)">
+      <polyline points="200,100 245,100 245,135 288,135"/>
+      <polyline points="200,220 245,220 245,195 288,195"/>
+      <polyline points="520,130 580,130 580,72 638,72"/>
+      <line x1="520" y1="168" x2="638" y2="168"/>
+      <polyline points="520,205 580,205 580,264 638,264" stroke-dasharray="4 4"/>
+    </g>
+    <g font-size="11" fill="#cbd5e1">
+      <text x="249" y="92" text-anchor="start">parse</text>
+      <text x="249" y="248" text-anchor="start">parse</text>
+      <text x="579" y="160">findings</text>
+    </g>
+  </g>
+</svg>

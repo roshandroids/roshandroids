@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350" role="img" aria-label="platform-ci: a consumer repo describes what to run in ci.yaml and calls versioned reusable workflows; quality always runs, and build, release, deploy and publish workflows are opt-in.">
+  <defs><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker><marker id="mg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#34d399"/></marker><marker id="mo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#fbbf24"/></marker></defs>
+  <rect width="900" height="350" rx="14" fill="#0f172a"/>
+  <g font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect x="30" y="100" width="210" height="130" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="135.0" y="145" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Consumer repo</text>
+  <text x="135.0" y="163" font-size="11" fill="#94a3b8" text-anchor="middle">ci.yaml: what to run</text>
+  <text x="135.0" y="179" font-size="11" fill="#94a3b8" text-anchor="middle">thin ci.yml pinned to</text>
+  <text x="135.0" y="195" font-size="11" fill="#94a3b8" text-anchor="middle">roshandroids/platform-ci@v1</text>
+  <rect x="340" y="30" width="210" height="70" rx="10" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="445.0" y="61" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">quality.yml</text>
+  <text x="445.0" y="79" font-size="11" fill="#94a3b8" text-anchor="middle">format, analyze, test</text>
+  <rect x="340" y="140" width="210" height="180" rx="10" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="445.0" y="194" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Opt-in callables</text>
+  <text x="445.0" y="212" font-size="11" fill="#94a3b8" text-anchor="middle">build.yml, release.yml</text>
+  <text x="445.0" y="228" font-size="11" fill="#94a3b8" text-anchor="middle">deploy-firebase, deploy-pages</text>
+  <text x="445.0" y="244" font-size="11" fill="#94a3b8" text-anchor="middle">deploy-web-demos</text>
+  <text x="445.0" y="260" font-size="11" fill="#94a3b8" text-anchor="middle">deploy-showcase, publish-pub</text>
+  <text x="445.0" y="276" font-size="11" fill="#94a3b8" text-anchor="middle">maintenance.yml</text>
+  <rect x="690" y="30" width="180" height="70" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="780.0" y="61" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">PR checks</text>
+  <text x="780.0" y="79" font-size="11" fill="#94a3b8" text-anchor="middle">status on every PR</text>
+  <rect x="690" y="160" width="180" height="140" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="780.0" y="202" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">Outputs</text>
+  <text x="780.0" y="220" font-size="11" fill="#94a3b8" text-anchor="middle">artifacts, Releases,</text>
+  <text x="780.0" y="236" font-size="11" fill="#94a3b8" text-anchor="middle">Firebase / Pages,</text>
+  <text x="780.0" y="252" font-size="11" fill="#94a3b8" text-anchor="middle">pub.dev, showcase</text>
+  <text x="780.0" y="268" font-size="11" fill="#94a3b8" text-anchor="middle">playgrounds</text>
+  <polyline points="240,130 290,130 290,65 338,65" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="290" y="56" font-size="11" fill="#cbd5e1" text-anchor="middle">default</text>
+  <polyline points="240,200 290,200 290,230 338,230" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="290" y="252" font-size="11" fill="#cbd5e1" text-anchor="middle">opt in</text>
+  <polyline points="550,65 688,65" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="619" y="57" font-size="11" fill="#cbd5e1" text-anchor="middle">reports</text>
+  <polyline points="550,230 688,230" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#ma)"/>
+  <text x="619" y="222" font-size="11" fill="#cbd5e1" text-anchor="middle">publishes</text>
+  </g>
+</svg>
